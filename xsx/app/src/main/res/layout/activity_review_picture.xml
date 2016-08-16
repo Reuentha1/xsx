@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.xiaoshangxing.wo.WoFrafment.check_photo.HackyViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black" />
+
+    <!--导航栏-->
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_144"
+        >
+
+        <!--返回-->
+        <LinearLayout
+            android:id="@+id/back"
+            android:paddingStart="@dimen/width_48"
+            android:background="@color/w0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/left_arrow_black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/x12"
+                android:text="@string/back"
+                android:textColor="@color/b0"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/indicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/viewpager_indicator"
+                android:textColor="@color/b0"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+        <!--more-->
+        <ImageView
+            android:paddingEnd="@dimen/width_48"
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/trash_black" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

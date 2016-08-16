@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/x182"
+    android:layout_height="match_parent">
+
+    <com.xiaoshangxing.setting.utils.photo_choosing.RoundedImageView
+        android:id="@+id/privacy_add"
+        android:layout_width="@dimen/x162"
+        android:layout_height="@dimen/x162"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/privacy_add"
+        app:corner_radius="90dp" />
+
+    <com.xiaoshangxing.setting.utils.photo_choosing.RoundedImageView
+        android:id="@+id/privacy_reddelete"
+        android:layout_width="@dimen/x55"
+        android:layout_height="@dimen/x55"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:src="@mipmap/privacy_redremove"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

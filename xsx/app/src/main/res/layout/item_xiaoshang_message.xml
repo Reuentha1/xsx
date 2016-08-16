@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <android.support.v7.widget.CardView
+        app:cardCornerRadius="8dp"
+        android:background="@color/w0"
+        android:elevation="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:paddingStart="@dimen/x24"
+            android:paddingEnd="@dimen/x18"
+            android:paddingTop="@dimen/y20"
+            android:paddingBottom="@dimen/y26"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--头像-->
+            <com.xiaoshangxing.utils.layout.CirecleImage
+                android:src="@mipmap/cirecleiamge_default"
+                android:id="@+id/head_image"
+                android:layout_width="@dimen/x108"
+                android:layout_height="@dimen/y108" />
+
+            <!--姓名和来源-->
+            <LinearLayout
+                android:id="@+id/name_type_lay"
+                android:layout_toRightOf="@+id/head_image"
+                android:paddingStart="@dimen/x24"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/y10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <!--姓名-->
+                <com.xiaoshangxing.utils.layout.Name
+                    android:id="@+id/name"
+                    android:textColor="@color/blue1"
+                    android:textSize="16sp"
+                    android:text="@string/app_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/from"
+                    android:textColor="@color/g0"
+                    android:textSize="13sp"
+                    android:layout_gravity="bottom"
+                    android:text="来自"
+                    android:layout_marginStart="@dimen/x24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <!--来源-->
+                <TextView
+                    android:id="@+id/type"
+                    android:textColor="@color/blue1"
+                    android:textSize="13sp"
+                    android:layout_gravity="bottom"
+                    android:text="校内悬赏"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <!--时间-->
+            <TextView
+                android:layout_toRightOf="@+id/head_image"
+                android:layout_below="@+id/name_type_lay"
+                android:layout_marginStart="@dimen/x24"
+                android:layout_marginTop="@dimen/y12"
+                android:text="2015.8.14 09:10"
+                android:textSize="11sp"
+                android:textColor="@color/g0"
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!--回复-->
+            <LinearLayout
+                android:id="@+id/response"
+                android:orientation="horizontal"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@mipmap/message_response"
+                    android:layout_width="@dimen/x84"
+                    android:layout_height="@dimen/y84" />
+                <TextView
+                    android:text="@string/response"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <!--评论-->
+            <LinearLayout
+                android:id="@+id/comment_layout"
+                android:layout_marginTop="@dimen/y36"
+                android:layout_below="@+id/head_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/g0"
+                    android:textSize="13sp"
+                    android:text="评论:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <!--评论内容-->
+                <com.xiaoshangxing.input_activity.EmotionText.EmotinText
+                    android:textColor="@color/b0"
+                    android:textSize="13sp"
+                    android:text="聊聊具体时间??"
+                    android:id="@+id/comment_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <!--自己回复-->
+            <LinearLayout
+                android:id="@+id/self_response_lay"
+                android:layout_marginTop="@dimen/y15"
+                android:layout_below="@+id/comment_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/blue1"
+                    android:textSize="13sp"
+                    android:text="自己"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="@color/g0"
+                    android:textSize="13sp"
+                    android:text="回复"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="@color/blue1"
+                    android:textSize="13sp"
+                    android:text="冯超群:"
+                    android:id="@+id/responsed_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <com.xiaoshangxing.input_activity.EmotionText.EmotinText
+                    android:textColor="@color/b0"
+                    android:textSize="13sp"
+                    android:text="这周五可以?"
+                    android:id="@+id/responsed_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <!--发布的内容-->
+            <LinearLayout
+                android:layout_below="@+id/self_response_lay"
+                android:layout_marginTop="@dimen/y15"
+                android:orientation="horizontal"
+                android:background="@drawable/circular_4_w3"
+                android:paddingStart="@dimen/x24"
+                android:paddingEnd="@dimen/x24"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y96">
+                <!--发布人-->
+                <TextView
+                    android:textSize="13sp"
+                    android:textColor="@color/g0"
+                    android:text="冯超群:"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/piblished_person"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <com.xiaoshangxing.input_activity.EmotionText.EmotinText
+                    android:textSize="13sp"
+                    android:textColor="@color/g0"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/longtext"
+                    android:id="@+id/piblished_text"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

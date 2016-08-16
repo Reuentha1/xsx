@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            app:cardCornerRadius="8dp"
+            android:layout_marginStart="@dimen/x24"
+            android:layout_marginEnd="@dimen/x24"
+            android:background="@color/w0"
+            android:elevation="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!--上方布局-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y156"
+                    android:layout_marginStart="@dimen/x30">
+                    <!--头像-->
+                    <com.xiaoshangxing.utils.layout.CirecleImage
+                        android:id="@+id/head_image"
+                        android:layout_width="@dimen/x108"
+                        android:layout_height="@dimen/y108"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/cirecleiamge_default" />
+                    <!--姓名-->
+                    <com.xiaoshangxing.utils.layout.Name
+                        android:id="@id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/x30"
+                        android:layout_marginTop="@dimen/y36"
+                        android:layout_toRightOf="@+id/head_image"
+                        android:text="@string/app_name"
+                        android:textColor="@color/blue1"
+                        android:textSize="14sp" />
+
+                    <!--学院-->
+                    <TextView
+                        android:id="@id/college"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/x18"
+                        android:layout_marginTop="@dimen/y36"
+                        android:layout_toRightOf="@+id/name"
+                        android:text="物联网"
+                        android:textColor="@color/g0"
+                        android:textSize="13sp" />
+
+                    <!--时间-->
+                    <TextView
+                        android:id="@id/time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/name"
+                        android:layout_marginStart="@dimen/x30"
+                        android:layout_marginTop="@dimen/y6"
+                        android:layout_toRightOf="@+id/head_image"
+                        android:text="时间"
+                        android:textColor="@color/g0"
+                        android:textSize="10sp" />
+
+                    <!--下拉箭头-->
+                    <ImageView
+                        android:layout_marginTop="@dimen/y20"
+                        android:layout_marginBottom="@dimen/x24"
+                        android:layout_alignParentEnd="true"
+                        android:id="@+id/down_arrow"
+                        android:src="@mipmap/down_arrow_gray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <!--价格-->
+                    <TextView
+                        android:text="￥100"
+                        android:id="@+id/price"
+                        android:layout_marginTop="@dimen/y36"
+                        android:layout_toStartOf="@+id/down_arrow"
+                        android:textColor="@color/red1"
+                        android:textSize="13sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+                <!--文字内容-->
+                <com.xiaoshangxing.input_activity.EmotionText.EmotinText
+                    android:id="@+id/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y364"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="7"
+                    android:paddingEnd="@dimen/width_48"
+                    android:paddingStart="@dimen/width_48"
+                    android:text="@string/longtext"
+                    android:textColor="@color/b0"
+                    android:textSize="14sp" />
+
+                <!--评论按钮-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y84">
+
+                    <ImageView
+                        android:id="@+id/button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginBottom="@dimen/y18"
+                        android:paddingEnd="@dimen/x30"
+                        android:src="@mipmap/menu" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/finish"
+        android:layout_marginTop="@dimen/y24"
+        android:layout_marginEnd="@dimen/x60"
+        android:layout_alignParentEnd="true"
+        android:src="@mipmap/school_reward_end"
+        android:layout_width="@dimen/x184"
+        android:layout_height="@dimen/y150" />
+
+</RelativeLayout>

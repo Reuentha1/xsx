@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--导航栏-->
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_144"
+        android:paddingStart="@dimen/width_48">
+
+        <!--返回-->
+        <LinearLayout
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/left_arrow_black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/x12"
+                android:text="@string/back"
+                android:textColor="@color/b0"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+        <!--详情-->
+        <TextView
+            android:id="@+id/myState"
+            style="@style/black_16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/detail" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/comment_input_layout"
+        android:layout_below="@+id/title">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/x24"
+            android:paddingEnd="@dimen/width_48"
+            android:paddingStart="@dimen/width_48"
+            android:paddingTop="@dimen/height_48">
+
+            <!--头像-->
+            <com.xiaoshangxing.utils.layout.CirecleImage
+                android:id="@+id/head_image"
+                android:layout_width="@dimen/x120"
+                android:layout_height="@dimen/y120"
+                android:src="@mipmap/cirecleiamge_default" />
+
+            <!--右侧布局-->
+            <LinearLayout
+                android:id="@+id/right_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/head_image"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/x18">
+
+                <!--姓名 学院-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <!--姓名-->
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_name"
+                        android:textColor="@color/b4"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                    <!--学院-->
+                    <TextView
+                        android:id="@+id/college"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/x18"
+                        android:text="物联网"
+                        android:textColor="@color/g0"
+                        android:textSize="11sp" />
+                </LinearLayout>
+
+                <!--说说文字内容-->
+                <com.xiaoshangxing.input_activity.EmotionText.EmotinText
+                    android:id="@+id/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y36"
+                    android:text="今天我们被采访啦，心情十分激动啊有木有！！这照片拍的，我们是多么认真呀，祝我们的项目越来越好哦！新的队员们，期待和你们早日见面^^~"
+                    android:textColor="@color/b4"
+                    android:textSize="13sp" />
+
+                <!--图片-->
+                <com.xiaoshangxing.wo.WoFrafment.NoScrollGridView
+                    android:id="@+id/photos1"
+                    android:layout_width="@dimen/x792"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y18"
+                    android:columnWidth="@dimen/x228"
+                    android:gravity="start"
+                    android:horizontalSpacing="@dimen/x12"
+                    android:numColumns="3"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="@dimen/y12">
+
+
+                </com.xiaoshangxing.wo.WoFrafment.NoScrollGridView>
+
+
+                <ImageView
+                    android:id="@+id/just_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="@dimen/y600"
+                    android:maxWidth="@dimen/x516" />
+
+                <!--地点-->
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y18"
+                    android:text="无锡·江南大学北区"
+                    android:textSize="12sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y18">
+                    <!--时间-->
+                    <TextView
+                        android:id="@+id/time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5分钟前"
+                        android:textSize="11sp" />
+                    <!--权限-->
+
+                    <!--权限列表-->
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/permission"
+                        android:layout_toRightOf="@+id/time"
+                        android:id="@+id/permission"
+                        android:layout_marginStart="@dimen/x18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <!--删除-->
+                    <TextView
+                        android:id="@+id/delete"
+                        android:layout_marginStart="@dimen/x18"
+                        android:layout_toRightOf="@+id/permission"
+                        android:text="@string/delete"
+                        android:textSize="12sp"
+                        android:textColor="@color/blue1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <!--赞按钮-->
+                    <CheckBox
+                        android:id="@+id/praise"
+                        android:layout_width="@dimen/x44"
+                        android:layout_height="@dimen/y38"
+                        android:layout_marginRight="@dimen/x72"
+                        android:layout_toLeftOf="@+id/comment"
+                        android:background="@drawable/wo_praise_selector"
+                        android:button="@null"></CheckBox>
+                    <!--评论按钮-->
+                    <ImageView
+                        android:id="@+id/comment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@mipmap/comment">
+
+                    </ImageView>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/comment_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/right_layout"
+                android:layout_marginTop="@dimen/y18"
+                android:background="@drawable/comment"
+                android:orientation="vertical">
+
+                <!--点赞人头像-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:paddingTop="10dp"
+                        android:layout_marginStart="@dimen/x30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/blue_heart_big" />
+
+                    <GridLayout
+                        android:id="@+id/praise_people"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:cacheColorHint="@color/transparent"
+                        android:columnCount="9"
+                        android:fadeScrollbars="false"
+                        android:fadingEdge="none"
+                        android:fastScrollEnabled="false"
+                        android:listSelector="@color/transparent"
+                        android:overScrollMode="never"
+                        android:scrollbars="none">
+
+                    </GridLayout>
+
+                </LinearLayout>
+
+                <!--评论-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:paddingTop="15dp"
+                        android:layout_marginStart="@dimen/x30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/comment_blue" />
+
+                    <LinearLayout
+                        android:id="@+id/comments"
+                        android:paddingStart="@dimen/x20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <include layout="@layout/line_horizontal_g1">
+
+                        </include>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+    <!--&lt;!&ndash;评论框&ndash;&gt;-->
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/comment_input_layout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/y144"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:background="@color/w1"-->
+        <!--android:paddingEnd="@dimen/x23"-->
+        <!--android:paddingStart="@dimen/x23">-->
+
+        <!--&lt;!&ndash;输入框和表情按钮&ndash;&gt;-->
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/input_layout"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/y92"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_toLeftOf="@+id/send"-->
+            <!--android:background="@drawable/et_circular_8_w0">-->
+
+            <!--&lt;!&ndash;????不能把editext放在iamgeview的左边，否则得不到焦点 不知道为何&ndash;&gt;-->
+            <!--<EditText-->
+                <!--android:id="@+id/comment_input"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:background="@null"-->
+                <!--android:hint="@string/comment"-->
+                <!--android:textSize="13sp"-->
+                <!--android:paddingRight="@dimen/x80"-->
+                <!--android:paddingStart="10dp"-->
+                <!--android:textCursorDrawable="@drawable/cursor_blue4" />-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/emotion"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginEnd="@dimen/x18"-->
+                <!--android:src="@mipmap/emotion" />-->
+        <!--</RelativeLayout>-->
+
+        <!--&lt;!&ndash;发送按钮&ndash;&gt;-->
+        <!--<TextView-->
+            <!--android:id="@+id/send"-->
+            <!--android:layout_width="@dimen/x160"-->
+            <!--android:layout_height="@dimen/y92"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginStart="@dimen/x18"-->
+            <!--android:background="@drawable/btn_circular_g1"-->
+            <!--android:enabled="false"-->
+            <!--android:gravity="center"-->
+            <!--android:text="@string/send"-->
+            <!--android:textColor="@color/w0"-->
+            <!--android:textSize="14sp" />-->
+    <!--</RelativeLayout>-->
+    <include layout="@layout/util_inputbox_and_emot">
+
+    </include>
+</RelativeLayout>

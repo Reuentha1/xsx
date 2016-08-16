@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation">
+
+    <string-array name="letter_list">
+        <item>↑</item>
+        <item>\@</item>
+        <item>\#</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>T</item>
+        <item>U</item>
+        <item>V</item>
+        <item>W</item>
+        <item>X</item>
+        <item>Y</item>
+        <item>Z</item>
+    </string-array>
+
+    <string-array name="letter_list2">
+        <item>↑</item>
+        <item>\#</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>T</item>
+        <item>U</item>
+        <item>V</item>
+        <item>W</item>
+        <item>X</item>
+        <item>Y</item>
+        <item>Z</item>
+    </string-array>
+
+    <string-array name="report_reasons">
+        <item> 色情低俗</item>
+        <item> 广告骚扰</item>
+        <item> 政治敏感</item>
+        <item> 谣言</item>
+        <item> 欺诈骗钱</item>
+        <item> 违法（暴力恐怖、违禁品等）</item>
+        <item> 售假举报</item>
+    </string-array>
+
+    <string-array name="NoDisturb">
+        <item> 开启</item>
+        <item> 只在夜间开启</item>
+        <item> 关闭</item>
+    </string-array>
+    <declare-styleable name="RoundedImageView">
+        <attr name="corner_radius" format="dimension" />
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="mutate_background" format="boolean" />
+        <attr name="oval" format="boolean" />
+        <attr name="android:scaleType" />
+    </declare-styleable>
+
+    <declare-styleable name="FlowLayout">
+        <attr name="horizontalSpacing" format="dimension" />
+        <attr name="verticalSpacing" format="dimension" />
+        <attr name="orientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <attr name="debugDraw" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="FlowLayout_LayoutParams">
+        <attr name="layout_newLine" format="boolean" />
+        <attr name="layout_horizontalSpacing" format="dimension" />
+        <attr name="layout_verticalSpacing" format="dimension" />
+    </declare-styleable>
+
+    <string-array name="date">
+        <item>阿妹</item>
+        <item>阿郎</item>
+        <item>陈奕迅</item>
+        <item>周杰伦</item>
+        <item>曾一鸣</item>
+        <item>成龙</item>
+        <item>王力宏</item>
+        <item>汪峰</item>
+        <item>王菲</item>
+        <item>那英</item>
+        <item>张伟</item>
+        <item>张学友</item>
+        <item>李德华</item>
+        <item>郑源</item>
+        <item>白水水</item>
+        <item>白天不亮</item>
+        <item>陈龙</item>
+        <item>陈丽丽</item>
+        <item>哈林</item>
+        <item>高进</item>
+        <item>高雷</item>
+        <item>阮今天</item>
+        <item>龚琳娜</item>
+        <item>苏醒</item>
+        <item>苏永康</item>
+        <item>陶喆</item>
+        <item>沙宝亮</item>
+        <item>宋冬野</item>
+        <item>宋伟</item>
+        <item>袁成杰</item>
+        <item>戚薇</item>
+        <item>齐大友</item>
+        <item>齐天大圣</item>
+        <item>品冠</item>
+        <item>吴克群</item>
+        <item>BOBO</item>
+        <item>Jobs</item>
+        <item>动力火车</item>
+        <item>伍佰</item>
+        <item>#蔡依林</item>
+        <item>$797835344$</item>
+        <item>Jack</item>
+        <item>~夏先生</item>
+    </string-array>
+
+</resources>

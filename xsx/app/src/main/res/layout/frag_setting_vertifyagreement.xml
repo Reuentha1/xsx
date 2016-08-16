@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/w3"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y144">
+
+        <TextView
+            style="@style/black_16sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/VertifyAgreement" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text2"
+        style="@style/black_16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text1"
+        android:layout_marginTop="@dimen/y48"
+        android:gravity="center_horizontal"
+        android:text="@string/VertifyAgreement2" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text2"
+        android:layout_marginEnd="@dimen/x48"
+        android:layout_marginStart="@dimen/x48"
+        android:layout_marginTop="@dimen/y48"
+        android:text="@string/VertifyAgreement3"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/agree"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y144"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/green1"
+        android:text="@string/agree"
+        android:textColor="@color/w0"
+        android:textSize="17sp" />
+</RelativeLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--取消-->
+    <LinearLayout
+        android:id="@+id/cancer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y124">
+        <TextView
+            android:id="@+id/cancel"
+            android:text="@string/cancle"
+            style="@style/green1_15sp"
+            android:layout_marginLeft="@dimen/x24"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+    <!--请输入你的手机号-->
+    <TextView
+        android:id="@+id/tv_inputnumber"
+        android:layout_below="@+id/cancer_layout"
+        android:text="@string/inputyounumber"
+        style="@style/black_23sp"
+        android:layout_marginTop="@dimen/y48"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!--手机号输入框-->
+    <LinearLayout
+        android:id="@+id/ly_inputnumber"
+        android:layout_below="@+id/tv_inputnumber"
+        android:layout_marginTop="@dimen/y156"
+        android:layout_marginStart="@dimen/x48"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--国家/地区 中国-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                style="@style/black_16sp"
+                android:text="@string/country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                style="@style/black_16sp"
+                android:text="@string/china"
+                android:layout_marginStart="@dimen/x100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <!--分割线-->
+        <View
+            android:layout_marginTop="@dimen/y42"
+            android:background="@color/g1"
+            android:layout_width="match_parent"
+            android:layout_height="1px">
+
+        </View>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y144">
+
+            <!--+86-->
+            <TextView
+                style="@style/black_16sp"
+                android:gravity="center_vertical"
+                android:text="@string/phone_head"
+                android:layout_width="@dimen/x240"
+                android:layout_height="match_parent" />
+
+            <!--分割线-->
+            <View
+                android:background="@color/g1"
+                android:layout_width="1px"
+                android:layout_height="match_parent">
+
+            </View>
+
+            <!--号码输入框-->
+            <EditText
+                style="@style/input_phoneNumber"
+                android:id="@+id/et_account"
+                android:hint="@string/inputnumber"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/x52"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <!--分割线-->
+        <View
+            android:background="@color/g1"
+            android:layout_width="match_parent"
+            android:layout_height="1px">
+
+        </View>
+
+    </LinearLayout>
+
+    <!--注册按钮-->
+    <Button
+        style="@style/long_btn"
+        android:layout_below="@+id/ly_inputnumber"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btn_register"
+        android:text="@string/register"
+        android:layout_marginTop="@dimen/y90"
+         />
+
+    <!--协议-->
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/y66"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/agreen_protocol"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/b2"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="@string/protocol"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/blue1"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

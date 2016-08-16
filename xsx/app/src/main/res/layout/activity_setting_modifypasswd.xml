@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/w3"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y144"
+        android:background="@color/w1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/modifypassword_back"
+            style="@style/black_16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x48"
+            android:clickable="true"
+            android:onClick="Cancel"
+            android:text="@string/cancle" />
+
+        <TextView
+            style="@style/black_17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/modifypassword" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/w1"
+        android:divider="@drawable/toolbar_divider"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/x48"
+        android:layout_marginTop="@dimen/y48"
+        android:showDividers="middle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y144"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/black_16sp"
+                android:layout_width="@dimen/x320"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/phoneNumber" />
+            <EditText
+                android:id="@+id/modify_editText1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:digits="0123456789"
+                android:hint="@string/modify1"
+                android:background="@color/transparent"
+                android:textCursorDrawable="@drawable/cursor_blue4" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y144"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/black_16sp"
+                android:layout_width="@dimen/x320"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/password" />
+            <EditText
+                android:id="@+id/modify_editText2"
+                android:inputType="textWebPassword"
+                android:digits="@string/digits_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/modify2"
+                android:background="@color/transparent"
+                android:textCursorDrawable="@drawable/cursor_blue4" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y144"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/black_16sp"
+                android:layout_width="@dimen/x320"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/comfirm_code" />
+            <EditText
+                android:id="@+id/modify_editText3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPassword"
+                android:digits="@string/digits_password"
+                android:hint="@string/modify3"
+                android:background="@color/transparent"
+                android:textCursorDrawable="@drawable/cursor_blue4" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y120"
+        android:layout_marginTop="@dimen/y70">
+        <Button
+            android:id="@+id/confirm_modify"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/x48"
+            android:layout_marginEnd="@dimen/y48"
+            android:text="@string/confirmmodify"
+            android:alpha="0.5"
+            android:clickable="false"
+            android:textSize="17sp"
+            android:textColor="@color/w0"
+            android:background="@drawable/buttonstyle_green1" />
+    </LinearLayout>
+</LinearLayout>

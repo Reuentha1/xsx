@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/x546"
+    android:layout_height="@dimen/y136"
+    android:background="@mipmap/popup_myhelp_up"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_marginTop="@dimen/y34"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y102">
+        <TextView
+            android:id="@+id/transmit"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/w0"
+            android:textSize="13sp"
+            android:text="@string/transmit"
+            android:layout_width="@dimen/x165"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/delete"
+            android:gravity="center"
+            android:textColor="@color/w0"
+            android:textSize="13sp"
+            android:text="@string/delete"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/more"
+            android:gravity="center"
+            android:textColor="@color/w0"
+            android:textSize="13sp"
+            android:text="@string/more"
+            android:layout_width="@dimen/x206"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/y16"
+    android:paddingBottom="@dimen/y16"
+    android:paddingEnd="@dimen/x36"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--头像-->
+    <com.xiaoshangxing.utils.layout.CirecleImage
+        android:id="@+id/head_image"
+        android:paddingEnd="@dimen/x12"
+        android:src="@mipmap/cirecleiamge_default"
+        android:layout_width="@dimen/x96"
+        android:layout_height="@dimen/y96" />
+
+    <!--姓名-->
+    <TextView
+        android:id="@+id/name"
+        android:text="@string/app_name"
+        android:textSize="13sp"
+        android:textColor="@color/blue1"
+        android:layout_toRightOf="@+id/head_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!--时间-->
+    <TextView
+        android:id="@+id/time"
+        android:text="6月12日 14:25"
+        android:textSize="12sp"
+        android:textColor="@color/g0"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!--评论内容-->
+    <com.xiaoshangxing.input_activity.EmotionText.EmotinText
+        android:id="@+id/text"
+        android:layout_below="@+id/name"
+        android:layout_toRightOf="@+id/head_image"
+        android:text="@string/longtext"
+        android:textSize="13sp"
+        android:textColor="@color/b0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

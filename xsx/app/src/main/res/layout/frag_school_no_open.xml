@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/util_cancel_no_arrow">
+
+    </include>
+
+    <!--暂未开通-->
+    <TextView
+        android:text="江南大学暂未开通"
+        style="@style/black_23sp"
+        android:id="@+id/school_notice"
+        android:layout_marginTop="@dimen/y60"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!--按钮-->
+    <Button
+        android:layout_marginTop="@dimen/y184"
+        android:text="@string/appeal_open"
+        android:id="@+id/appeal_open"
+        android:enabled="true"
+        android:alpha="1"
+        style="@style/long_btn"/>
+
+    <!--感谢支持-->
+    <TextView
+        android:text="@string/thanks_for_support"
+        android:textSize="13sp"
+        android:textColor="@color/gray_login"
+        android:layout_marginTop="@dimen/y60"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/w3"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/setting_privacy_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y144"
+        android:background="@color/w1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/hometown_privacy_leftarrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x24"
+            android:src="@mipmap/left_arrow_black" />
+
+        <TextView
+            android:id="@+id/privacy_back"
+            style="@style/black_16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x12"
+            android:layout_toRightOf="@+id/hometown_privacy_leftarrow"
+            android:clickable="true"
+            android:onClick="privacy_back"
+            android:text="@string/back" />
+
+        <TextView
+            style="@style/black_17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/privacy" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/privacy_lay4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y144"
+        android:layout_marginTop="@dimen/y48"
+        android:background="@color/w1"
+        android:onClick="blacklist"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/privacy_disturb"
+            style="@style/black_16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/x48"
+            android:text="@string/blacklist" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/x48"
+            android:src="@mipmap/right_arrow" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/x48"
+        android:paddingTop="@dimen/y20"
+        android:paddingBottom="@dimen/y20"
+        android:text="@string/oldboy"
+        android:textColor="@color/g0"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/w1"
+        android:divider="@drawable/toolbar_divider"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/x48"
+        android:showDividers="middle">
+
+        <RelativeLayout
+            android:onClick="PrivacyFirst"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y144">
+
+            <TextView
+                style="@style/black_16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/privacy1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/x48"
+                android:src="@mipmap/right_arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:onClick="PrivacySecond"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y144">
+
+            <TextView
+                style="@style/black_16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/privacy2" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/x48"
+                android:src="@mipmap/right_arrow" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y144"
+        android:paddingStart="@dimen/x48"
+        android:background="@color/w1"
+        android:layout_marginTop="@dimen/y48">
+
+        <TextView
+            style="@style/black_16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/privacy3" />
+
+        <com.xiaoshangxing.utils.SwitchView
+            android:id="@+id/privacy_allow"
+            android:layout_width="40dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/x48" />
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/y24"
+        android:layout_marginStart="@dimen/x24"
+        android:layout_marginEnd="@dimen/x24"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--搜索框-->
+        <AutoCompleteTextView
+            android:id="@+id/serch"
+            android:layout_toLeftOf="@+id/cancel"
+            android:drawableLeft="@mipmap/serch"
+            android:background="@drawable/btn_circular_white_register"
+            android:paddingStart="@dimen/x24"
+            android:textSize="14sp"
+            android:textCursorDrawable="@drawable/cursor_blue4"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:layout_marginEnd="@dimen/x24"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y90" />
+
+        <!--取消-->
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_alignParentEnd="true"
+            android:textSize="17sp"
+            android:text="@string/cancle"
+            android:layout_centerVertical="true"
+            android:textColor="@color/green1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</LinearLayout>

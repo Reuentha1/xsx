@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/w3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--导航栏-->
+    <RelativeLayout
+        android:paddingStart="@dimen/width_48"
+        android:paddingEnd="@dimen/width_48"
+        android:background="@color/w0"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_144">
+
+        <!--返回-->
+        <LinearLayout
+            android:id="@+id/back"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/left_arrow_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/x12"
+                android:textSize="15sp"
+                android:textColor="@color/b0"
+                android:text="@string/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <!--title-->
+        <TextView
+            style="@style/black_16sp"
+            android:layout_centerInParent="true"
+            android:id="@+id/title"
+            android:text="不给谁看"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:fadingEdge="none"
+        android:fadeScrollbars="false"
+        android:fastScrollEnabled="false"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:cacheColorHint="@color/transparent"
+        android:listSelector="@color/transparent"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:background="@color/w0"
+        android:paddingStart="@dimen/width_48"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+</LinearLayout>

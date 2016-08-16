@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/w0"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/first_item"
+        android:text="发送给好友"
+        android:textSize="17sp"
+        android:textColor="@color/b0"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_144" />
+
+    <include layout="@layout/line_horizontal_g1">
+
+    </include>
+
+    <TextView
+        android:id="@+id/second_item"
+        android:text="保存到手机"
+        android:textSize="17sp"
+        android:textColor="@color/b0"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_144" />
+
+    <include layout="@layout/line_horizontal_g1">
+
+    </include>
+    <TextView
+        android:id="@+id/third_item"
+        android:text="删除"
+        android:textSize="17sp"
+        android:textColor="@color/red1"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_144" />
+
+
+
+    <View
+        android:background="@color/w3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y18">
+
+    </View>
+
+    <TextView
+        android:id="@+id/cancel"
+        android:text="@string/cancle"
+        android:textSize="17sp"
+        android:textColor="@color/b0"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_144" />
+
+</LinearLayout>

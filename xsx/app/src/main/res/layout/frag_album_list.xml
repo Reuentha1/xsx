@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/w3"
+    android:orientation="vertical">
+
+    <!--导航栏-->
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_144"
+        android:background="@color/w0"
+        android:paddingStart="@dimen/width_48">
+
+        <!--选择相册-->
+        <TextView
+            android:id="@+id/myState"
+            style="@style/black_16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/detail" />
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/x12"
+            android:paddingEnd="@dimen/width_48"
+            android:text="@string/cancle"
+            android:textColor="@color/b0"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/transparent"
+        android:dividerHeight="2px"
+        android:fadingEdge="none"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="@color/transparent"
+        android:overScrollMode="never">
+
+    </ListView>
+
+</LinearLayout>

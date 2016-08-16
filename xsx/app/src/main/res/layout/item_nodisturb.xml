@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y144"
+    android:minHeight="@dimen/y144"
+    android:background="@color/w0"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:checkMark="@drawable/disturb_selector"
+    style="@style/black_16sp"
+    android:paddingStart="@dimen/x48"
+    android:paddingEnd = "@dimen/x48">
+
+    <!--    <TextView
+            android:id="@+id/item_report_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="校上行"
+            style="@style/black_16sp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x48"/>-->
+    <!-- <CheckBox
+         android:id="@+id/item_report_check"
+         android:layout_width="wrap_wcontent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_centerVertical="true"
+         android:layout_marginRight="@dimen/x38"/>-->
+    <!--<TextView
+        android:id="@+id/item_report_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="校上行"
+        style="@style/black_16sp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/x48"/>-->
+</CheckedTextView>

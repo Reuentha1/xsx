@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingEnd="@dimen/width_48">
+    <!--头像-->
+    <com.xiaoshangxing.utils.layout.CirecleImage
+        android:paddingStart="@dimen/x2"
+        android:id="@+id/head_image"
+        android:layout_width="@dimen/x152"
+        android:layout_height="@dimen/y152"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/y38"
+        android:src="@mipmap/cirecleiamge_default" />
+
+
+    <LinearLayout
+        android:id="@+id/mid_layout"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/x286"
+        android:layout_toRightOf="@+id/head_image"
+        android:paddingStart="@dimen/x24">
+
+        <!--姓名-->
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@color/blue1"
+            android:textSize="14sp" />
+
+        <FrameLayout
+            android:layout_marginTop="@dimen/y18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/praise"
+                android:src="@mipmap/blue_heart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <com.xiaoshangxing.input_activity.EmotionText.EmotinText
+                android:visibility="gone"
+                android:id="@+id/comment_text"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:text="@string/longtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+
+        <!--时间-->
+        <TextView
+            android:layout_marginTop="@dimen/y18"
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上午 10:04"
+            android:textColor="@color/g0"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+
+    <!--图片或说说-->
+    <FrameLayout
+        android:id="@+id/right_layout"
+        android:layout_width="@dimen/x166"
+        android:layout_height="@dimen/y166"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/y31"
+        android:paddingBottom="@dimen/y31">
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/w2"
+            android:scaleType="centerCrop" />
+
+        <com.xiaoshangxing.input_activity.EmotionText.EmotinText
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/w2"
+            android:text="@string/longtext"
+            android:textColor="@color/g0"
+            android:textSize="8sp"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@mipmap/popupmenu_publish"
+    android:layout_marginEnd="@dimen/x18"
+    android:layout_width="@dimen/x397"
+    android:layout_height="@dimen/y274">
+
+    <!--我要发布-->
+    <LinearLayout
+        android:layout_marginTop="@dimen/y21"
+        android:id="@+id/publish"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:paddingStart="@dimen/x54"
+            android:layout_width="@dimen/x162"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@mipmap/shoolhelp_publish"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:textSize="15sp"
+            android:textColor="@color/w0"
+            android:text="@string/iwant_publish"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <!--已发布-->
+    <LinearLayout
+        android:id="@+id/published"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:paddingStart="@dimen/x51"
+            android:layout_width="@dimen/x162"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@mipmap/shoolhelp_published"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:textSize="15sp"
+            android:textColor="@color/w0"
+            android:text="@string/ipublished"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

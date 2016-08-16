@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y192"
+    android:background="@color/w0"
+    android:paddingStart="@dimen/width_48">
+
+    <!--头像-->
+    <com.xiaoshangxing.utils.layout.CirecleImage
+        android:id="@+id/head_image"
+        android:layout_width="@dimen/x120"
+        android:layout_height="@dimen/y120"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/cirecleiamge_default" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/head_image"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!--姓名-->
+            <com.xiaoshangxing.utils.layout.Name
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/x36"
+                android:text="@string/app_name"
+                android:textColor="@color/blue1"
+                android:textSize="16sp" />
+            <!--学院-->
+            <TextView
+                android:id="@+id/college"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="物联网"
+                android:textColor="@color/g0"
+                android:textSize="13sp" />
+        </LinearLayout>
+        <!--文字内容-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/name"
+            android:layout_marginStart="@dimen/x36"
+            android:layout_marginTop="@dimen/y12">
+
+            <TextView
+                android:id="@+id/transmit_loaction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="转发到校友圈:"
+                android:textColor="@color/g0" />
+            <!--文字内容-->
+            <com.xiaoshangxing.input_activity.EmotionText.EmotinText
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="物联网"
+                android:textColor="@color/b0"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <!--时间-->
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/width_48"
+        android:layout_marginTop="@dimen/y52"
+        android:text="02:55"
+        android:textColor="@color/g2"
+        android:textSize="10sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/g1">
+
+    </View>
+</RelativeLayout>

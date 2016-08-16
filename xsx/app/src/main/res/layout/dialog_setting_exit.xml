@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/toolbar_divider"
+        android:orientation="vertical"
+        android:showDividers="middle">
+        <ListView
+            android:id="@+id/dialog_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/toolbar_divider"
+            android:listSelector="@android:color/transparent" />
+        <ListView
+            android:id="@+id/dialog_listtop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/toolbar_divider"
+            android:listSelector="@android:color/transparent" />
+        <ListView
+            android:id="@+id/dialog_listbotton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/toolbar_divider"
+            android:listSelector="@android:color/transparent" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/dialog_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/menu_item_middle"
+        android:text="取消"
+        android:textSize="16sp" />
+</LinearLayout>

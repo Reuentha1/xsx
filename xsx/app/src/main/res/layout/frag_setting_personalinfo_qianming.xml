@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/w3"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/setting_qianming_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y144"
+        android:background="@color/w1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/hometown_qianming_leftarrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x24"
+            android:src="@mipmap/left_arrow_black" />
+
+        <TextView
+            android:id="@+id/qianming_back"
+            style="@style/black_16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x12"
+            android:layout_toRightOf="@+id/hometown_qianming_leftarrow"
+            android:clickable="true"
+            android:text="@string/back" />
+
+        <TextView
+            style="@style/black_16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/autograph" />
+
+        <TextView
+            android:id="@+id/qianming_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/x48"
+            android:alpha="0.5"
+            android:clickable="true"
+            android:text="@string/save"
+            android:textColor="@color/green1"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y300"
+        android:layout_marginTop="@dimen/y48"
+        android:background="@color/w1"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/qianming_editText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="top"
+            android:hint="@string/introduceOneself"
+            android:paddingEnd="@dimen/x48"
+            android:paddingStart="@dimen/x48"
+            android:textCursorDrawable="@drawable/cursor_blue4"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/qianming_count"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="bottom|end"
+            android:paddingBottom="@dimen/y30"
+            android:paddingEnd="@dimen/x48"
+            android:text="30"
+            android:textColor="@color/g0"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

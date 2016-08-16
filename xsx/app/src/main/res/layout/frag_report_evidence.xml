@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/w3"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_report_evidence" />
+
+    <RelativeLayout
+        android:id="@+id/report_evidence_content1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y96"
+        android:layout_below="@+id/toolbar_report_evidence"
+        android:minHeight="@dimen/y96">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/y18"
+            android:paddingLeft="@dimen/x48"
+            android:text="@string/report_evidence"
+            android:textColor="@color/g0"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/report_evidence_content2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y345"
+        android:layout_below="@+id/report_evidence_content1"
+        android:background="@color/w0"
+        android:minHeight="@dimen/y345">
+
+        <EditText
+            android:id="@+id/report_evidence_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="left|top"
+            android:hint="@string/report_evidence_content"
+            android:paddingBottom="@dimen/y20"
+            android:paddingLeft="@dimen/x48"
+            android:paddingRight="@dimen/x48"
+            android:paddingTop="@dimen/y20"
+            android:textCursorDrawable="@drawable/cursor_blue4"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/report_evidence_content2"
+        android:background="@color/w0"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/report_evidence_picture"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y144"
+            android:divider="@drawable/toolbar_divider"
+            android:orientation="vertical"
+            android:showDividers="beginning">
+
+            <TextView
+                style="@style/black_16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="@dimen/x48"
+                android:paddingTop="@dimen/y48"
+                android:text="@string/report_evidence_picture" />
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/report_evidence_gridview"
+            android:layout_width="@dimen/x748"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/report_evidence_picture"
+            android:layout_marginLeft="@dimen/x48"
+            android:layout_marginTop="@dimen/x48"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:verticalSpacing="@dimen/x20" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y36"
+            android:layout_below="@id/report_evidence_gridview"
+            android:background="@color/w0" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/report_evidence_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/y84"
+        android:clickable="true"
+        android:text="@string/report_notice"
+        android:textColor="@color/blue1"
+        android:textSize="13sp" />
+</RelativeLayout>

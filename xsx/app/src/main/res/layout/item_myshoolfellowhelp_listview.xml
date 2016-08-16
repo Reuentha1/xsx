@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:background="@color/w0"
+    android:orientation="vertical">
+    <!--上方布局-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y156"
+        android:layout_marginStart="@dimen/x30">
+        <!--头像-->
+        <com.xiaoshangxing.utils.layout.CirecleImage
+            android:id="@+id/head_image"
+            android:layout_width="@dimen/x108"
+            android:layout_height="@dimen/y108"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/cirecleiamge_default" />
+        <!--姓名-->
+        <com.xiaoshangxing.utils.layout.Name
+            android:id="@id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/x30"
+            android:layout_marginTop="@dimen/y36"
+            android:layout_toRightOf="@+id/head_image"
+            android:text="@string/app_name"
+            android:textColor="@color/blue1"
+            android:textSize="14sp" />
+
+        <!--学院-->
+        <TextView
+            android:id="@id/college"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/x18"
+            android:layout_marginTop="@dimen/y36"
+            android:layout_toRightOf="@+id/name"
+            android:text="物联网"
+            android:textColor="@color/g0"
+            android:textSize="13sp" />
+
+        <!--时间-->
+        <TextView
+            android:id="@id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_marginStart="@dimen/x30"
+            android:layout_marginTop="@dimen/y12"
+            android:layout_toRightOf="@+id/head_image"
+            android:text="时间"
+            android:textColor="@color/g0"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <!--文字内容-->
+    <com.xiaoshangxing.input_activity.EmotionText.EmotinText
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y364"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="7"
+        android:paddingEnd="@dimen/width_48"
+        android:paddingStart="@dimen/width_48"
+        android:text="@string/longtext"
+        android:textColor="@color/b0"
+        android:textSize="14sp" />
+
+    <!--按钮-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y84">
+
+        <CheckBox
+            android:focusable="false"
+            android:id="@+id/iscomplete"
+            android:button="@null"
+            android:background="@drawable/selector_myhelp_iscomplete"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <CheckBox
+            android:focusable="false"
+            android:visibility="invisible"
+            android:id="@+id/checkbox"
+            android:button="@null"
+            android:background="@drawable/selector_myhelp_more"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="@dimen/y12"
+            android:layout_marginEnd="@dimen/x48"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+</LinearLayout>

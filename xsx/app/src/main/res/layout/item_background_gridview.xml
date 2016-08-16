@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <com.xiaoshangxing.setting.utils.photo_choosing.RoundedImageView
+        android:id="@+id/background_grida_image"
+        android:layout_width="@dimen/x336"
+        android:layout_height="@dimen/x336"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/greyblock"
+        app:corner_radius="6dp" />
+
+    <TextView
+        android:id="@+id/background_grida_text"
+        android:layout_width="@dimen/x336"
+        android:layout_height="@dimen/y60"
+        android:layout_alignParentBottom="true"
+        android:alpha="0.5"
+        android:background="@color/w0"
+        android:gravity="center"
+        android:text="@string/download"
+        android:textColor="@color/b0"
+        android:textSize="11sp" />
+
+    <RelativeLayout
+        android:id="@+id/background_grida_complete"
+        android:layout_width="@dimen/x336"
+        android:layout_height="@dimen/y60"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/style_circulr"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/download_complete" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

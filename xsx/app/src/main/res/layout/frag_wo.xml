@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/w0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <!--朋友圈-->
+    <stan.reuenthal.com.xsx.MainFrame.xiaoshangxing.utils.pull_refresh.PtrFrameLayout
+        android:id="@+id/reflesh_layout"
+        xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+        cube_ptr:ptr_duration_to_close="200"
+        cube_ptr:ptr_duration_to_close_header="1000"
+        cube_ptr:ptr_keep_header_when_refresh="true"
+        cube_ptr:ptr_pull_to_fresh="false"
+        cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+        cube_ptr:ptr_resistance="1.7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:overScrollMode="never"
+            android:cacheColorHint="@color/transparent"
+            android:listSelector="@color/transparent"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:transcriptMode="normal"
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+
+    </stan.reuenthal.com.xsx.MainFrame.xiaoshangxing.utils.pull_refresh.PtrFrameLayout>
+
+
+    <!--导航栏-->
+    <RelativeLayout
+        android:id="@+id/title"
+        android:paddingStart="@dimen/width_48"
+        android:paddingEnd="@dimen/width_48"
+        android:background="@color/w0"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y144">
+
+        <!--设置-->
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/set"
+            android:src="@mipmap/set"
+            android:paddingEnd="@dimen/width_48"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </ImageView>
+
+        <!--发布动态-->
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:paddingStart="@dimen/width_48"
+            android:id="@+id/publish"
+            android:src="@mipmap/feather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </ImageView>
+
+        <!--分割线-->
+        <View
+            android:layout_alignParentBottom="true"
+            android:id="@+id/line"
+            android:visibility="invisible"
+            android:background="@color/g1"
+            android:layout_width="match_parent"
+            android:layout_height="1px">
+
+        </View>
+
+    </RelativeLayout>
+
+    <!--输入框-->
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/comment_input_layout"-->
+        <!--android:layout_above="@+id/emot_lay"-->
+        <!--android:visibility="invisible"-->
+        <!--android:background="@color/w1"-->
+        <!--android:paddingStart="@dimen/x23"-->
+        <!--android:paddingEnd="@dimen/x23"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/y144">-->
+
+        <!--&lt;!&ndash;输入框和表情按钮&ndash;&gt;-->
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/input_layout"-->
+            <!--android:layout_toLeftOf="@+id/send"-->
+            <!--android:background="@drawable/et_circular_8_w0"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/y92">-->
+
+            <!--&lt;!&ndash;????不能把editext放在iamgeview的左边，否则得不到焦点 不知道为何&ndash;&gt;-->
+            <!--<com.xiaoshangxing.input_activity.EmotionEdittext.EmoticonsEditText-->
+                <!--android:textCursorDrawable="@drawable/cursor_blue4"-->
+                <!--android:id="@+id/comment_input"-->
+                <!--android:paddingStart="10dp"-->
+                <!--android:paddingRight="@dimen/x80"-->
+                <!--android:background="@null"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent" />-->
+            <!--<ImageView-->
+                <!--android:src="@mipmap/emotion"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:id="@+id/emotion"-->
+                <!--android:layout_marginEnd="@dimen/x18"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+        <!--</RelativeLayout>-->
+
+        <!--&lt;!&ndash;发送按钮&ndash;&gt;-->
+        <!--<TextView-->
+            <!--android:layout_marginStart="@dimen/x18"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:id="@+id/send"-->
+            <!--android:text="@string/send"-->
+            <!--android:textSize="14sp"-->
+            <!--android:textColor="@color/w0"-->
+            <!--android:enabled="false"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:background="@drawable/btn_circular_g1"-->
+            <!--android:layout_width="@dimen/x160"-->
+            <!--android:layout_height="@dimen/y92" />-->
+    <!--</RelativeLayout>-->
+
+
+
+</RelativeLayout>

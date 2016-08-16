@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/w3"
+    android:orientation="vertical">
+
+    <!--导航栏-->
+    <RelativeLayout
+        android:id="@+id/title_lay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_144"
+        android:background="@color/w0"
+        android:paddingEnd="@dimen/width_48"
+        android:paddingStart="@dimen/width_48">
+
+        <!--返回-->
+        <LinearLayout
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/left_arrow_black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/x12"
+                android:text="@string/back"
+                android:textColor="@color/b0"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+        <!--我的互帮-->
+        <TextView
+            android:id="@+id/title"
+            style="@style/black_16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/myshoolfellowhelp" />
+
+    </RelativeLayout>
+
+    <!--listview-->
+    <com.xiaoshangxing.utils.pull_refresh.PtrFrameLayout xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/reflesh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_lay"
+        android:layout_above="@+id/hideMenu"
+        cube_ptr:ptr_duration_to_close="200"
+        cube_ptr:ptr_duration_to_close_header="1000"
+        cube_ptr:ptr_keep_header_when_refresh="true"
+        cube_ptr:ptr_pull_to_fresh="false"
+        cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+        cube_ptr:ptr_resistance="1.7">
+
+        <ListView
+            android:layout_marginBottom="@dimen/y126"
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@color/transparent"
+            android:dividerHeight="@dimen/height_48"
+            android:fadingEdge="none"
+            android:footerDividersEnabled="false"
+            android:listSelector="@color/transparent"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:transcriptMode="normal">
+
+        </ListView>
+
+    </com.xiaoshangxing.utils.pull_refresh.PtrFrameLayout>
+
+    <!--隐藏菜单-->
+    <RelativeLayout
+        android:id="@+id/hideMenu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y126"
+        android:layout_alignParentBottom="true"
+        android:background="@color/w0"
+        android:visibility="gone">
+
+        <include layout="@layout/line_horizontal_g1">
+
+        </include>
+
+        <ImageView
+            android:id="@+id/hide_trasmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/x100"
+            android:paddingBottom="@dimen/y36"
+            android:paddingStart="@dimen/x60"
+            android:src="@mipmap/transmit_black" />
+
+        <ImageView
+            android:id="@+id/hide_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/x100"
+            android:paddingBottom="@dimen/y33"
+            android:paddingEnd="@dimen/x44"
+            android:src="@mipmap/trash_black" />
+    </RelativeLayout>
+
+    <!--没有内容-->
+    <TextView
+        android:id="@+id/no_content"
+        android:visibility="invisible"
+        android:paddingTop="@dimen/y502"
+        android:textSize="13sp"
+        android:textColor="@color/g1"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_lay"
+        android:text="@string/no_published_help" />
+
+</RelativeLayout>

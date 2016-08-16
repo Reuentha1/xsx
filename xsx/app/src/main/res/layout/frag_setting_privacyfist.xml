@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/w3"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/setting_privacyfirst_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y144"
+        android:background="@color/w1"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/privacyfirst_cancel"
+            style="@style/black_16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x48"
+            android:clickable="true"
+            android:text="@string/cancle" />
+
+        <TextView
+            style="@style/black_17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/privacy1" />
+
+        <TextView
+            android:id="@+id/privacyfirst_complete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/x48"
+            android:alpha="0.5"
+            android:clickable="false"
+            android:text="@string/finish"
+            android:textColor="@color/green1"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/w1">
+
+        <GridView
+            android:id="@+id/privacyfirst_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/x48"
+            android:layout_marginStart="@dimen/x48"
+            android:layout_marginTop="@dimen/y43"
+
+            android:numColumns="5"
+            android:verticalSpacing="@dimen/y16" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y43"
+            android:layout_below="@id/privacyfirst_gridview"
+            android:background="@color/w1" />
+    </RelativeLayout>
+
+    <TextView
+        style="@style/g0_13sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y30"
+        android:gravity="center"
+        android:text="@string/privacy_text1" />
+
+</LinearLayout>

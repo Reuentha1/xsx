@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/w3">
+    <!--导航栏-->
+    <RelativeLayout
+        android:id="@+id/title_lay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_144"
+        android:background="@color/w0">
+
+        <!--返回-->
+        <LinearLayout
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/width_48"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/left_arrow_black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/x12"
+                android:text="@string/back"
+                android:textColor="@color/b0"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+        <!--title-->
+        <TextView
+            android:id="@+id/title"
+            style="@style/black_16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <!--取消-->
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/width_48"
+            android:text="@string/cancle"
+            android:textColor="@color/green1"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <!--图片列表-->
+    <GridView
+        android:id="@+id/grideview"
+        android:layout_below="@+id/title_lay"
+        android:layout_above="@+id/details_entry_layout"
+        android:focusable="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/y48"
+        android:paddingStart="@dimen/x24"
+        android:paddingEnd="@dimen/x24"
+        android:numColumns="3"
+        android:columnWidth="@dimen/x336"
+        android:fadingEdge="none"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:cacheColorHint="@color/transparent"
+        android:listSelector="@color/transparent"
+        android:horizontalSpacing="@dimen/x12"
+        android:verticalSpacing="@dimen/y12"
+        android:transcriptMode="normal"
+        android:stretchMode="columnWidth"
+        android:orientation="horizontal">
+    </GridView>
+
+    <!--下方-->
+    <RelativeLayout
+        android:id="@+id/details_entry_layout"
+        android:layout_width="match_parent"
+        android:background="@color/w0"
+        android:layout_height="@dimen/y144"
+        android:layout_alignParentBottom="true">
+
+        <CheckBox
+            android:id="@+id/original"
+            android:layout_width="@dimen/x84"
+            android:layout_height="@dimen/y84"
+            android:layout_centerVertical="true"
+            android:layout_margin="6dp"
+            android:background="@drawable/selector_picture_original"
+            android:button="@null"
+            android:focusable="false" />
+        <TextView
+            android:text="@string/original"
+            android:id="@+id/original_text"
+            android:textColor="@color/b0"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/original"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!--发送-->
+        <RelativeLayout
+            android:id="@+id/complete"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="@dimen/width_48"
+            android:background="@color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="@string/complete"
+                    android:textColor="@color/green1"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/count"
+                    android:text="(1)"
+                    android:textColor="@color/green1"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

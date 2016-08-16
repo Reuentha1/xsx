@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_circular_white"
+    android:layout_width="@dimen/x780"
+    android:layout_height="match_parent">
+
+
+    <!--Title-->
+    <TextView
+        android:paddingTop="@dimen/y30"
+        android:id="@+id/dialog_title"
+        android:visibility="gone"
+        android:background="@color/transparent"
+        android:text="Title"
+        style="@style/black_16sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <!--message-->
+    <TextView
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:id="@+id/dialog_message"
+        android:background="@color/transparent"
+        android:text="Message"
+        android:textStyle="bold"
+        style="@style/black_16sp"
+        android:layout_marginTop="@dimen/y24"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!--分割线-->
+    <View
+        android:background="@color/g1"
+        android:layout_width="match_parent"
+        android:layout_height="1px">
+
+    </View>
+
+    <!--button-->
+    <LinearLayout
+        android:id="@+id/dialog_twoButton"
+        android:background="@color/transparent"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--两个button-->
+        <Button
+            android:id="@+id/dialog_button1"
+            android:text="@string/cancle"
+            android:textSize="16sp"
+            android:background="@color/transparent"
+            android:textColor="@color/blue2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <!--分割线-->
+        <View
+            android:background="@color/g1"
+            android:layout_width="1px"
+            android:layout_height="match_parent">
+
+        </View>
+
+        <Button
+            android:id="@+id/dialog_button2"
+            android:text="好"
+            android:textSize="16sp"
+            android:background="@color/transparent"
+            android:textColor="@color/blue2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/dialog_button"
+        android:text="取消"
+        android:textSize="16sp"
+        android:background="@color/transparent"
+        android:textColor="@color/blue2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y126" />
+
+
+
+</LinearLayout>

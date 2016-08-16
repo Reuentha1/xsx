@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/w3"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_report_notice" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@drawable/toolbar_divider"
+        android:showDividers="beginning"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/y48"
+            android:layout_marginTop="@dimen/y48"
+            android:text="@string/report_notice"
+            android:textColor="@color/b1"
+            android:textSize="17sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x48"
+            android:layout_marginRight="@dimen/x48"
+            android:text="@string/report_notice_content"
+            android:textColor="@color/b1"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>

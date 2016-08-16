@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="stan.reuenthal.com.xsx">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <!-- 权限声明 -->
+    <!-- 访问网络状态-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 控制呼吸灯，振动器等，用于新消息提醒 -->
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 外置存储存取权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <!-- 多媒体相关 -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <!-- 如果需要实时音视频通话模块，下面的权限也是必须的。否则，可以不加 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+
+    <!-- SDK 权限申明, 第三方 APP 接入时，请将 com.netease.nim.demo 替换为自己的包名 -->
+    <!-- 和下面的 uses-permission 一起加入到你的 AndroidManifest 文件中。 -->
+    <permission
+        android:name="stan.reuenthal.com.xsx.permission.RECEIVE_MSG"
+        android:protectionLevel="signature"/>
+    <!-- 接收 SDK 消息广播权限， 第三方 APP 接入时，请将 com.netease.nim.demo 替换为自己的包名 -->
+    <uses-permission android:name="stan.reuenthal.com.mytestkeyboard.permission.RECEIVE_MSG"/>
+
+
+    <application
+        android:name="stan.reuenthal.com.xsx.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/LightBaseActionBarTheme">
+        <activity
+            android:name="stan.reuenthal.com.xsx.LoginActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:hardwareAccelerated="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.AppCompat"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.MULTIWINDOW_LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="stan.reuenthal.com.xsx.keyboard.QqActivity"
+            android:theme="@style/XhsEmoticonsKeyboardTheme.NoTitle"></activity>
+        <activity
+            android:name="stan.reuenthal.com.xsx.keyboard.P2PMessageActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:name="stan.reuenthal.com.xsx.keyboard.TeamMessageActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+
+        <!-- 群聊 -->
+        <activity
+            android:name="stan.reuenthal.com.xsx.keyboard.NormalTeamInfoActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:name="stan.reuenthal.com.xsx.keyboard.AdvancedTeamInfoActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:name="stan.reuenthal.com.xsx.keyboard.AdvancedTeamMemberActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:name="stan.reuenthal.com.xsx.keyboard.AdvancedTeamAnnounceActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:name="stan.reuenthal.com.xsx.keyboard.AdvancedTeamMemberInfoActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:name="stan.reuenthal.com.xsx.keyboard.AdvancedTeamNicknameActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <!--<activity
+            android:name=".AdvancedTeamCreateActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>-->
+        <activity
+            android:name="stan.reuenthal.com.xsx.keyboard.AdvancedTeamCreateAnnounceActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:name="stan.reuenthal.com.xsx.keyboard.TeamPropertySettingActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+
+        <!-- 联系人选择器 -->
+        <activity
+            android:name="stan.reuenthal.com.xsx.IMpanel.ContactSelectActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/contact_selector"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+
+        <!-- 照片选择 -->
+        <activity
+            android:name="stan.reuenthal.com.xsx.IMpanel.PickImageActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="stan.reuenthal.com.xsx.IMpanel.CropImageActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="stan.reuenthal.com.xsx.IMpanel.PickerAlbumActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="stan.reuenthal.com.xsx.IMpanel.PickerAlbumPreviewActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="stan.reuenthal.com.xsx.keyboard.PreviewImageFromLocalActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:name="stan.reuenthal.com.xsx.keyboard.PreviewImageFromCameraActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/input_panel_take"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+
+        <!-- 查看大图 -->
+        <activity
+            android:name="stan.reuenthal.com.xsx.IMpanel.WatchMessagePictureActivity"
+            android:configChanges="keyboardHidden"/>
+
+        <!-- 主界面 -->
+        <activity
+            android:name="stan.reuenthal.com.xsx.IMUI.MainActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+
+        <!-- 多端登录管理 -->
+        <activity
+            android:name="stan.reuenthal.com.xsx.IMUI.MultiportActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden">
+        </activity>
+
+
+        <!-- 关于 -->
+        <activity
+            android:name="stan.reuenthal.com.xsx.IMUI.AboutActivity"
+            android:configChanges="orientation"
+            android:label="@string/about"
+            android:screenOrientation="portrait"
+            android:theme="@style/OverlayBaseActionBarTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+
+        <activity
+            android:name="stan.reuenthal.com.xsx.IMUI.SettingsActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+
+        <activity
+            android:name="stan.reuenthal.com.xsx.IMUI.NoDisturbActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+
+        <activity
+            android:name="stan.reuenthal.com.xsx.IMUI.AddFriendActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+
+        <activity
+            android:name="stan.reuenthal.com.xsx.IMUI.UserProfileActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+
+        <activity
+            android:name="stan.reuenthal.com.xsx.IMUI.UserProfileSettingActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+
+        <activity
+            android:name="stan.reuenthal.com.xsx.IMUI.UserProfileEditItemActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+
+        <activity
+            android:name="stan.reuenthal.com.xsx.IMUI.BlackListActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+
+        <!--<activity
+            android:name=".main.activity.EditNicknameActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"/>-->
+
+        <!-- 文件管理器 -->
+        <activity
+            android:name="stan.reuenthal.com.xsx.IMUI.FileBrowserActivity"
+            android:configChanges="orientation"
+            android:label="@string/file_browser"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+
+        <activity
+            android:name="stan.reuenthal.com.xsx.IMUI.SystemMessageActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/OverlayBaseActionBarTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:name="stan.reuenthal.com.xsx.IMUI.CustomNotificationActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/OverlayBaseActionBarTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:name="stan.reuenthal.com.xsx.IMUI.MessageHistoryActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/OverlayBaseActionBarTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:name="stan.reuenthal.com.xsx.IMUI.MessageInfoActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/LightBaseActionBarTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+
+        <activity
+            android:name="stan.reuenthal.com.xsx.IMUI.AdvancedTeamSearchActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+
+        <activity
+            android:name="stan.reuenthal.com.xsx.IMUI.AdvancedTeamJoinActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+
+        <activity
+            android:name="stan.reuenthal.com.xsx.IMUI.TeamListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+
+        <!-- 全局搜索 -->
+        <activity
+            android:name="stan.reuenthal.com.xsx.IMUI.GlobalSearchActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/global_search_bg"
+            android:windowSoftInputMode="stateUnspecified">
+        </activity>
+
+        <!-- 查看阅后即焚 -->
+        <activity
+            android:name="stan.reuenthal.com.xsx.IMUI.WatchSnapChatPictureActivity"
+            android:configChanges="keyboardHidden"/>
+        <!-- map -->
+        <!--<activity
+            android:name=".location.activity.LocationAmapActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/location_map"
+            android:screenOrientation="portrait"/>-->
+        <!--<activity
+            android:name=".location.activity.NavigationAmapActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/location_navigate"
+            android:screenOrientation="portrait"/>-->
+
+        <!-- 音视频 -->
+        <!--<activity
+            android:name=".avchat.activity.AVChatActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden"/>-->
+
+        <!-- 消息历史搜索 -->
+        <activity
+            android:name="stan.reuenthal.com.xsx.IMUI.SearchMessageActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/global_search_bg"
+            android:windowSoftInputMode="adjustPan|stateUnspecified"/>
+
+        <activity
+            android:name="stan.reuenthal.com.xsx.IMUI.DisplayMessageActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/OverlayBaseActionBarTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+
+        <activity android:name="stan.reuenthal.com.xsx.IMpanel.CaptureVideoActivity"></activity>
+
+        <activity android:name="stan.reuenthal.com.xsx.MainFrame.xiaoshangxing.login_register.StartActivity.StartActivity" />
+        <activity android:name="stan.reuenthal.com.xsx.MainFrame.xiaoshangxing.login_register.LoginRegisterActivity.LoginRegisterActivity"></activity>
+        <activity android:name="stan.reuenthal.com.xsx.MainFrame.xiaoshangxing.MainActivity"></activity>
+        <activity android:name="stan.reuenthal.com.xsx.MainFrame.xiaoshangxing.wo.myState.myStateActivity" />
+        <activity
+            android:name="stan.reuenthal.com.xsx.MainFrame.xiaoshangxing.wo.myState.DetailsActivity.DetailsActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name="stan.reuenthal.com.xsx.MainFrame.xiaoshangxing.wo.NewsActivity.NewsActivity" />
+        <activity android:name="stan.reuenthal.com.xsx.MainFrame.xiaoshangxing.wo.WoFrafment.check_photo.ImagePagerActivity" />
+        <activity android:name="stan.reuenthal.com.xsx.MainFrame.xiaoshangxing.wo.myState.check_photo.myStateImagePagerActivity" />
+        <activity android:name="stan.reuenthal.com.xsx.MainFrame.xiaoshangxing.wo.roll.rollActivity" />
+        <activity
+            android:name="stan.reuenthal.com.xsx.MainFrame.xiaoshangxing.report.ReportActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name="stan.reuenthal.com.xsx.MainFrame.xiaoshangxing.setting.SettingActivity" />
+        <activity android:name="stan.reuenthal.com.xsx.MainFrame.xiaoshangxing.setting.personalinfo.PersonalInfoActivity" />
+        <activity android:name="stan.reuenthal.com.xsx.MainFrame.xiaoshangxing.setting.feedback.FeedbackActivity" />
+        <activity android:name="stan.reuenthal.com.xsx.MainFrame.xiaoshangxing.setting.newNotice.NewNoticeActivity" />
+        <activity android:name="stan.reuenthal.com.xsx.MainFrame.xiaoshangxing.setting.mailboxbind.MailBoxBindActivity" />
+        <activity android:name="stan.reuenthal.com.xsx.MainFrame.xiaoshangxing.setting.privacy.PrivacyActivity" />
+        <activity android:name="stan.reuenthal.com.xsx.MainFrame.xiaoshangxing.setting.currency.CurrencyActivity" />
+        <activity android:name="stan.reuenthal.com.xsx.MainFrame.xiaoshangxing.setting.about.AboutActivity" />
+        <activity android:name="stan.reuenthal.com.xsx.MainFrame.xiaoshangxing.setting.modifypassword.ModifyPassWordActivity" />
+        <activity android:name="stan.reuenthal.com.xsx.MainFrame.xiaoshangxing.setting.mailboxbind.ModifyMailBoxActivity" />
+
+        <!-- 互帮 -->
+        <activity android:name="stan.reuenthal.com.xsx.MainFrame.xiaoshangxing.xiaoshang.ShoolfellowHelp.ShoolfellowHelpActivity"></activity>
+        <activity android:name="stan.reuenthal.com.xsx.MainFrame.xiaoshangxing.xiaoshang.ShoolfellowHelp.HelpDetail.HelpDetailActivity"></activity>
+        <activity android:name="stan.reuenthal.com.xsx.MainFrame.xiaoshangxing.xiaoshang.ShoolReward.ShoolRewardActivity"></activity>
+        <activity android:name="stan.reuenthal.com.xsx.MainFrame.xiaoshangxing.xiaoshang.ShoolReward.RewardDetail.RewardDetailActivity"></activity>
+        <activity
+            android:name="stan.reuenthal.com.xsx.MainFrame.xiaoshangxing.input_activity.InputActivity"
+            android:windowSoftInputMode="stateVisible|adjustPan">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name="stan.reuenthal.com.xsx.MainFrame.xiaoshangxing.input_activity.check_photo.inputSelectPhotoPagerActivity"></activity>
+        <activity android:name="stan.reuenthal.com.xsx.MainFrame.xiaoshangxing.utils.photoChoosing.PhotoChoosingActivity"></activity>
+        <activity android:name="stan.reuenthal.com.xsx.MainFrame.xiaoshangxing.input_activity.check_photo.ReviewPictureActivity"></activity>
+        <activity android:name="stan.reuenthal.com.xsx.MainFrame.xiaoshangxing.SelectPerson.SelectPersonActivity"></activity>
+        <activity android:name="stan.reuenthal.com.xsx.MainFrame.xiaoshangxing.xiaoshang.MessageNotice.MessageNoticeActivity"></activity>
+        <activity android:name="stan.reuenthal.com.xsx.MainFrame.xiaoshangxing.input_activity.album.AlbumActivity">
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+
+        <activity android:name="stan.reuenthal.com.xsx.MainFrame.xiaoshangxing.TestActivity">
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+
+        <!-- 聊天室 -->
+        <!--<activity
+            android:name=".chatroom.activity.ChatRoomActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>-->
+
+        <meta-data
+            android:name="com.netease.nim.appKey"
+            android:value="43a392778af5e6ce32f74568664745a5" />
+
+        <!-- 声明云信后台服务，如需保持后台推送，使用独立进程效果会更好。 -->
+        <service
+            android:name="com.netease.nimlib.service.NimService"
+            android:process=":core"/>
+
+        <service
+            android:name="com.netease.nimlib.service.NimService$Aux"
+            android:process=":core"/>
+
+        <!-- 云信SDK的监视系统启动和网络变化的广播接收器，用户开机自启动以及网络变化时候重新登录，
+            保持和 NimService 同一进程 -->
+        <receiver android:name="com.netease.nimlib.service.NimReceiver"
+            android:process=":core"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- 云信进程间通信 Receiver -->
+        <receiver android:name="com.netease.nimlib.service.ResponseReceiver"/>
+
+        <!-- 安卓保活配置 -->
+        <service
+            android:name="com.netease.cosine.core.CosineService"
+            android:process=":cosine">
+        </service>
+
+        <receiver
+            android:name="com.netease.cosine.target.CosineReceiver"
+            android:exported="true"
+            android:process=":cosine">
+        </receiver>
+
+        <meta-data
+            android:name="com.netease.cosine.target"
+            android:value=""/>
+        <meta-data
+            android:name="com.netease.cosine.target.receiver"
+            android:value="com.netease.nimlib.service.NimReceiver"/>
+    </application>
+
+</manifest>

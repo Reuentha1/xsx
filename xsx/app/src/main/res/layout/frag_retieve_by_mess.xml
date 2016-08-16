@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/util_back_left_arrow">
+
+    </include>
+
+    <!--请设置你的登录密码-->
+    <TextView
+        style="@style/black_23sp"
+        android:text="@string/retrieve_by_message"
+        android:layout_marginTop="@dimen/y48"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!--输入手机号布局-->
+    <LinearLayout
+        android:layout_marginTop="@dimen/y156"
+        android:layout_marginLeft="@dimen/x48"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--国家-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y144">
+            <TextView
+                style="@style/black_16sp"
+                android:text="@string/country"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                style="@style/black_16sp"
+                android:text="@string/china"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/x100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <include layout="@layout/line_horizontal_g1">
+
+        </include>
+
+        <!--国家-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y144">
+            <TextView
+                style="@style/black_16sp"
+                android:text="@string/phone_head"
+                android:layout_gravity="center_vertical"
+                android:layout_width="@dimen/x240"
+                android:layout_height="wrap_content" />
+            <EditText
+                style="@style/input_phoneNumber"
+                android:id="@+id/et_phoneNumber"
+                android:hint="@string/inputyounumber"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/x100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <include layout="@layout/line_horizontal_g1">
+
+        </include>
+
+    </LinearLayout>
+
+    <!--按钮-->
+    <Button
+        style="@style/long_btn"
+        android:id="@+id/btn_next"
+        android:layout_marginTop="@dimen/y90"
+        android:text="@string/next"
+        />
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/w3"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_report_commit" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@drawable/toolbar_divider"
+        android:showDividers="beginning"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/x264"
+            android:layout_height="@dimen/y360"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/y96"
+            android:layout_marginTop="@dimen/y144"
+            android:src="@mipmap/report_commit" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/y48"
+            android:text="@string/submitted"
+            android:textColor="@color/b1"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/submitted_content1"
+            android:textColor="@color/b4"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/submitted_content2"
+            android:textColor="@color/b4"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

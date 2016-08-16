@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/w3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--标题栏-->
+    <LinearLayout
+        android:background="@color/b2"
+        android:layout_width="match_parent"
+        android:paddingStart="@dimen/x24"
+        android:paddingEnd="@dimen/x24"
+        android:layout_height="@dimen/y184">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--返回-->
+            <LinearLayout
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:src="@mipmap/left_arrow_white"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:paddingStart="@dimen/x12"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/back"
+                    android:textSize="15sp"
+                    android:textColor="@color/w0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!--邮箱验证找回-->
+            <TextView
+                android:textColor="@color/w0"
+                android:textSize="17sp"
+                android:text="@string/retrieve_by_emain2"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!--完成-->
+            <TextView
+                android:id="@+id/complete"
+                android:textColor="@color/w0"
+                android:textSize="15sp"
+                android:text="@string/complete"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <!--图片-->
+    <ImageView
+        android:src="@mipmap/sended_email"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y216"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!--邮箱-->
+    <TextView
+        android:id="@+id/email"
+        android:text="邮箱:@@"
+        android:layout_marginTop="@dimen/y120"
+        android:textSize="17sp"
+        android:textColor="@color/b0"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!---->
+    <TextView
+        android:id="@+id/email_sended_notice"
+        android:text="@string/sended_email_notice"
+        android:layout_marginTop="@dimen/y52"
+        android:textSize="13sp"
+        android:textColor="@color/g0"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

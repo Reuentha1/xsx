@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/util_back_left_arrow">
+
+    </include>
+
+    <!--短信验证码已发送,请填写验\n证码-->
+    <TextView
+        style="@style/black_23sp"
+        android:text="@string/input_vertify_code"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!--验证码输入框-->
+    <LinearLayout
+        android:layout_marginStart="@dimen/x42"
+        android:layout_marginTop="@dimen/y132"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y126">
+            <!--手机号-->
+            <TextView
+                android:gravity="center_vertical"
+                style="@style/g0_15sp"
+                android:text="@string/phoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <!--手机号-->
+            <TextView
+                android:id="@+id/phone_number"
+                android:gravity="center_vertical"
+                android:layout_marginStart="@dimen/x126"
+                style="@style/g0_15sp"
+                android:text="@string/phone_head"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <!--line-->
+        <include layout="@layout/line_horizontal_g1">
+
+        </include>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y126">
+            <!--手机号-->
+            <TextView
+                android:gravity="center_vertical"
+                style="@style/black_15sp"
+                android:text="@string/vertify_code"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <!--输入验证码-->
+            <EditText
+                android:id="@+id/et_vertify_code"
+                android:gravity="center_vertical"
+                android:layout_marginStart="@dimen/x126"
+                style="@style/input_vertify_code"
+                android:hint="@string/please_input_vertify_code"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <!--line-->
+        <include layout="@layout/line_horizontal_g1">
+
+        </include>
+
+    </LinearLayout>
+
+    <!--提交按钮-->
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_marginTop="@dimen/y90"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/submit"
+        style="@style/long_btn"
+         />
+
+    <!--接收短信秒数计时-->
+    <TextView
+        android:id="@+id/remain_time"
+        android:layout_marginTop="@dimen/y60"
+        android:textColor="@color/g0"
+        android:textSize="13sp"
+        android:text="@string/recieve_message_time"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/catalog"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y60"
+        android:background="#E0E0E0"
+        android:textColor="@color/g0"
+        android:textSize="13sp"
+        android:paddingStart="@dimen/width_48"
+        android:layout_weight="1.0"
+        android:text="A"/>
+
+    <View
+        android:id="@+id/line"
+        android:visibility="gone"
+        android:background="@color/g0"
+        android:layout_marginEnd="@dimen/width_48"
+        android:layout_marginStart="@dimen/x24"
+        android:layout_width="match_parent"
+        android:layout_height="1px">
+
+    </View>
+
+    <LinearLayout
+        android:paddingStart="@dimen/x24"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y160">
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="@dimen/x84"
+            android:layout_height="@dimen/y84"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/selector_selectperson"
+            android:layout_gravity="center_vertical"
+            android:button="@null"
+            android:focusable="false" />
+
+        <com.xiaoshangxing.utils.layout.CirecleImage
+            android:layout_marginStart="@dimen/x18"
+            android:id="@+id/head_image"
+            android:src="@mipmap/cirecleiamge_default"
+            android:layout_gravity="center_vertical"
+            android:layout_width="@dimen/x102"
+            android:layout_height="@dimen/y102" />
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/black_16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x30"
+            android:text="hhhh"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

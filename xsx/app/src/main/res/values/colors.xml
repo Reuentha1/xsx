@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="litte_red">#EF3B4F</color>
+    <color name="base_shallow_black">#818181</color>
+    <color name="text_tab_title_def">@color/base_shallow_black</color>
+    <color name="base_bg_gray">#EBEBEB</color>
+
+    <color name="edit_text">@color/black</color>
+    <color name="edit_hint_text">#ffacacac</color>
+
+    <color name="default_bg">#ebebeb</color>
+
+    <color name="light">#FFEEEEEE</color>
+    <color name="black">#000000</color>
+    <color name="grey">#333333</color>
+    <color name="global_bg">#9000</color>
+    <color name="color_green_01d9ae">#01D9AE</color>
+    <color name="color_gray_d9d9d9">#d9d9d9</color>
+    <color name="color_activity_blue_bg">#4cbe2c</color>
+    <color name="split_line_grey_color_d9d9d9">#D9D9D9</color>
+    <color name="green_4DC0A4">#4DC0A4</color>
+    <color name="gray7">#c5c4c4</color>
+    <color name="GreyWhite">#F7F7F7</color>
+    <color name="im_list_select_hover">#dbdbdb</color>
+    <color name="color_aaaaaa_content_text">#ffaaaaaa</color>
+    <color name="title_color_01d9ae">#01D9AE</color>
+    <color name="color_b3b3b3">#b3b3b3</color>
+    <color name="color_red_ccfa3c55">#ccfa3c55</color>
+    <color name="color_black_b3000000">#b3000000</color>
+    <color name="color_grey_eaeaea">#eaeaea</color>
+    <color name="color_black_333333">#333333</color>
+    <color name="color_grey_999999">#999999</color>
+    <color name="color_grey_555555">#555555</color>
+    <color name="color_green_disable">#a2efe0</color>
+    <color name="color_green_00d3a9">#ff00D3A9</color>
+    <color name="color_blue_0888ff">#4cbe2c</color>
+    <color name="action_bar_black_title_1f1f1f">#1f1f1f</color>
+    <color name="action_bar_black_title_color">#252525</color>
+
+    <color name="color_black_333333_90_transparent">#e5333333</color>
+    <color name="color_black_000000_88_transparent">#e0000000</color>
+
+    <!-- main bg color -->
+    <color name="main_bg_color">#FFFFFF</color>
+
+    <!-- session -->
+    <color name="color_message_default_bg">#e9ecf0</color>
+    <color name="input_panel_text_color_757572">#757572</color>
+    <color name="color_gray_cbd0d8">#cbd0d8</color>
+
+    <!-- image picker -->
+    <color name="color_split_line_d9d9d9">#d9d9d9</color>
+    <color name="color_split_line_cccccc">#cccccc</color>
+
+    <!-- contact -->
+    <color name="contact_list_hover">#d9d9d9</color>
+    <color name="contact_letter_idx_bg">#33000000</color>
+    <color name="contacts_letters_color">#80807c</color>
+    <color name="color_background">#ECF1F5</color>
+    <color name="press_mask">#33000000</color>
+    <color name="color_grey_ababab">#ababab</color>
+    <color name="color_yellow_796413">#796413</color>
+    <color name="color_yellow_b39729">#b39729</color>
+
+    <!-- setting -->
+    <color name="color_black_ff333333">#ff333333</color>
+    <color name="color_black_ff666666">#ff666666</color>
+    <color name="color_black_ff999999">#ff999999</color>
+    <color name="color_gray_bfc2c5">#bfc2c5</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="grey_white">#F7F7F7</color>
+    <color name="color_network_bar_bg_ee4b62">#ee4b62</color>
+    <color name="color_grey_888888">#888888</color>
+    <color name="color_red_f04c62">#f04c62</color>
+
+    <color name="help_color">#ff999999</color>
+    <color name="color_yellow_fcf3cd">#fcf3cd</color>
+    <color name="action_bar_tittle_color_555555">#555555</color>
+    <color name="grey_white_has_alpha">#66FAFAFA</color>
+    <color name="color_white_66ffffff">#66ffffff</color>
+
+    <color name="color_blue_1081ea">#4cbe2c</color>
+
+    <color name="menu_item_normal">#c9ffffff</color>
+    <color name="menu_item_pressed">#d5dadada</color>
+    <color name="menu_text">#f12162ff</color>
+
+    <!--半透明-->
+    <color name="halftransparent">#666666</color>
+
+
+    <!--标准绿-->
+    <color name="green1">#45C01A</color>
+    <!--描边绿-->
+    <color name="green2">#06bc04</color>
+
+    <!--可点击文字-->
+    <color name="blue1">#576b95</color>
+    <!--弹窗文字-->
+    <color name="blue2">#007AFF</color>
+    <!--校历未来活动-->
+    <color name="blue3">#00aeef</color>
+    <!--光标-->
+    <color name="blue4">#446cf2</color>
+
+
+    <!--小块红，文字红，描边红-->
+    <color name="red1">#e33933</color>
+    <!--大按钮底红色-->
+    <color name="red2">#ec5050</color>
+
+
+    <!--白-->
+    <color name="w0">#FFFFFF</color>
+    <!--标签栏底色-->
+    <color name="w1">#f9f9f9</color>
+    <!--评论底色-->
+    <color name="w2">#f1f1f1</color>
+    <!--默认背景色-->
+    <color name="w3">#efeff5</color>
+
+
+    <!--最常用灰-->
+    <color name="g0">#888888</color>
+    <!--分割线,灰按钮描边-->
+    <color name="g1">#d9d9d9</color>
+    <!--文字浅灰-->
+    <color name="g2">#b2b2b2</color>
+    <!--输入框描边-->
+    <color name="g3">#7a7e83</color>
+    <!--登录灰-->
+    <color name="gray_login">#aaaaaa</color>
+
+
+    <!--黑-->
+    <color name="b0">#000000</color>
+    <!--近黑文字-->
+    <color name="b1">#353535</color>
+    <!--导航栏底色-->
+    <color name="b2">#393a3f</color>
+    <!--弹窗底色-->
+    <color name="b3">#4c5154</color>
+    <!--深色文字-->
+    <color name="b4">#575757</color>
+    <!--无按钮弹窗 90%-->
+    <color name="b5">#4c4c4c</color>
+    <!--长按弹出按钮底色-->
+    <color name="b6">#2d2d2d</color>
+
+    <color name="albumback">#E1E0DE</color>
+    <color name="plugin_camera_black">#000000</color>
+
+    <color name="black_overlay">#66000000</color>
+
+</resources>

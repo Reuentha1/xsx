@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/w3"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_report_reason" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y96"
+        android:layout_below="@+id/report_toolbar"
+        android:minHeight="@dimen/y96">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/y18"
+            android:layout_marginLeft="@dimen/x48"
+            android:text="@string/report_reason"
+            android:textColor="@color/g0"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/list_reportReason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:choiceMode="singleChoice"
+        android:divider="@color/g1"
+        android:dividerHeight="@dimen/y1">
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/w0"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y184"
+    >
+
+    <!--图片-->
+    <ImageView
+        android:id="@id/image"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/greyblock"
+        android:layout_width="@dimen/x184"
+        android:layout_height="@dimen/y184" />
+    <!--相册名称-->
+    <TextView
+        android:id="@+id/name"
+        android:layout_toEndOf="@+id/image"
+        android:layout_marginStart="@dimen/x60"
+        android:layout_centerVertical="true"
+        style="@style/black_16sp"
+        android:text="最近照片"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_marginEnd="@dimen/width_48"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/right_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

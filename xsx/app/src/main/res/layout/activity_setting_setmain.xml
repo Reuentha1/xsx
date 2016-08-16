@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/w3"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_setting_set" />
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/toolbar_divider"
+        android:orientation="vertical"
+        android:showDividers="beginning">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y240"
+            android:onClick="PersonInfo"
+            android:background="@color/w1"
+            android:orientation="horizontal">
+
+            <com.xiaoshangxing.setting.utils.photo_choosing.RoundedImageView
+                android:id="@+id/setting_main_imag"
+                android:layout_width="@dimen/x168"
+                android:layout_height="@dimen/x168"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/x48"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/head_init"
+                app:corner_radius="90dp" />
+
+            <TextView
+                style="@style/black_17sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/x36"
+                android:layout_toEndOf="@id/setting_main_imag"
+                android:text="吴天阳" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/x48"
+                android:src="@mipmap/right_arrow" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/x48"
+        android:layout_marginTop="@dimen/y48"
+        android:background="@color/w1"
+        android:orientation="vertical"
+        android:divider="@drawable/toolbar_divider"
+        android:showDividers="middle">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y144"
+            android:onClick="NewNotice"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/black_16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/newnotice" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/x48"
+                android:src="@mipmap/right_arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y144"
+            android:onClick="Privacy"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/black_16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/privacy" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/x48"
+                android:src="@mipmap/right_arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y144"
+            android:background="@color/w1"
+            android:onClick="Currency"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/black_16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/currency" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/x48"
+                android:src="@mipmap/right_arrow" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y48"
+        android:orientation="vertical"
+        android:onClick="BindMailBox"
+        android:background="@color/w1"
+        android:paddingStart="@dimen/x48"
+        android:divider="@drawable/toolbar_divider"
+        android:showDividers="middle">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y144"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/black_16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/bindmail" />
+
+            <TextView
+                style="@style/g0_13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/bindmail_rightarrow"
+                android:layout_marginEnd="@dimen/x20"
+                android:text="绑定邮箱" />
+
+            <ImageView
+                android:id="@+id/bindmail_rightarrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/x48"
+                android:src="@mipmap/right_arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:onClick="VertifyPassWord"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y144"
+            android:background="@color/w1"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/black_16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/xsxpassword" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/x48"
+                android:src="@mipmap/right_arrow" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y48"
+        android:paddingStart="@dimen/x48"
+        android:background="@color/w1"
+        android:onClick="Feedbak"
+        android:orientation="vertical"
+        android:divider="@drawable/toolbar_divider"
+        android:showDividers="middle">
+
+        <!--<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y144"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/black_16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/feedback" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/x48"
+                android:src="@mipmap/right_arrow" />
+        </RelativeLayout>
+-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y144"
+            android:onClick="about"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/black_16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/about" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/x48"
+                android:src="@mipmap/right_arrow" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y126"
+        android:layout_marginTop="@dimen/y48"
+        android:background="@color/w1"
+        android:onClick="ExitSetting">
+
+        <TextView
+            style="@style/black_16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/exitlongin" />
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

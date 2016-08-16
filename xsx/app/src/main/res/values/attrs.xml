@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension"/>
+        <attr name="civ_border_color" format="color"/>
+        <attr name="civ_border_overlay" format="boolean"/>
+        <attr name="civ_fill_color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="ImageViewEx">
+        <attr name="exiv_default_image_res" format="reference"/>
+    </declare-styleable>
+
+    <!-- 分页标签 -->
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color"/>
+        <attr name="pstsUnderlineColor" format="color"/>
+        <attr name="pstsDividerColor" format="color"/>
+        <attr name="pstsCheckedTextColor" format="reference"/>
+        <attr name="pstsUncheckedTextColor" format="reference"/>
+        <attr name="pstsIndicatorHeight" format="dimension"/>
+        <attr name="pstsUnderlineHeight" format="dimension"/>
+        <attr name="pstsDividerPadding" format="dimension"/>
+        <attr name="pstsTabPaddingLeftRight" format="dimension"/>
+        <attr name="pstsScrollOffset" format="dimension"/>
+        <attr name="pstsTabBackground" format="reference"/>
+        <attr name="pstsShouldExpand" format="boolean"/>
+        <attr name="pstsTextAllCaps" format="boolean"/>
+    </declare-styleable>
+
+    <!-- 左右文本 -->
+    <declare-styleable name="TwoTextView">
+
+        <!-- 左边文本内容 -->
+        <attr name="ttLeftText" format="string|reference"/>
+        <!-- 右边文本内容 -->
+        <attr name="ttRightText" format="string|reference"/>
+        <!-- 左边文本字体大小 -->
+        <attr name="ttLeftTextSize" format="dimension"/>
+        <!-- 右边文本字体大小 -->
+        <attr name="ttRightTextSize" format="dimension"/>
+        <!-- 左边文本颜色 -->
+        <attr name="ttLeftTextColor" format="reference"/>
+        <!-- 右边文本颜色 -->
+        <attr name="ttRightTextColor" format="reference"/>
+    </declare-styleable>
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+
+
+
+    <attr name="expandedText" format="string" />
+    <attr name="collapsedText" format="string" />
+    <attr name="trimLines" format="integer" />
+
+    <declare-styleable name="MoreTextView">
+        <attr name="expandedText" />
+        <attr name="collapsedText"/>
+        <attr name="trimLines" />
+        <attr name="textSize" />
+        <attr name="textColor" />
+    </declare-styleable>
+
+    <declare-styleable name="CollapsedTextView">
+        <attr name="expandedText" />
+        <attr name="collapsedText" />
+        <attr name="trimLines" />
+    </declare-styleable>
+</resources>

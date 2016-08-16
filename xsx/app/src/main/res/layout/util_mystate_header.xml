@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/headView"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/width_48"
+    android:paddingEnd="@dimen/width_48"
+    android:layout_width="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/up_layout"
+        android:layout_above="@+id/news"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y280">
+    <!--名字-->
+        <FrameLayout
+            android:layout_toLeftOf="@+id/head_image"
+            android:layout_marginRight="@dimen/width_48"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/name1"
+                android:paddingTop="1px"
+                android:paddingStart="1px"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="@color/b0"
+                android:text="@string/app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/name2"
+                android:textSize="17sp"
+                android:textColor="@color/w0"
+                android:textStyle="bold"
+                android:text="@string/app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+
+    <!--头像-->
+    <com.xiaoshangxing.utils.layout.CirecleImage
+        android:id="@+id/head_image"
+        android:src="@mipmap/cirecleiamge_default"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="@dimen/x228"
+        android:layout_height="@dimen/y228" />
+            <TextView
+                android:visibility="gone"
+                android:background="@drawable/lay_circular_g1"
+                android:layout_marginStart="@dimen/x8"
+                android:padding="6dp"
+                android:textSize="13sp"
+                android:textColor="@color/w0"
+                android:layout_centerVertical="true"
+                android:layout_alignParentBottom="true"
+                android:text="1条新消息"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        <!--</RelativeLayout>-->
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/w3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--标题栏-->
+    <LinearLayout
+        android:id="@+id/back"
+        android:background="@color/b2"
+        android:layout_width="match_parent"
+        android:paddingStart="@dimen/x24"
+        android:paddingEnd="@dimen/x24"
+        android:layout_height="@dimen/y184">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--选择学校-->
+            <TextView
+                android:textColor="@color/w0"
+                android:textSize="17sp"
+                android:text="@string/select_school"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <!--搜索框-->
+    <RelativeLayout
+        android:id="@+id/serch_layout"
+        android:layout_marginTop="@dimen/y18"
+        android:background="@drawable/et_circular_4_white"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="@dimen/x1020"
+        android:layout_height="@dimen/y90">
+
+        <ImageView
+            android:src="@mipmap/serch"
+            android:layout_toLeftOf="@+id/text"
+            android:layout_marginEnd="@dimen/x18"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/text"
+            android:textSize="14sp"
+            android:text="@string/please_input_you_school"
+            android:layout_centerInParent="true"
+            android:textColor="@color/gray_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <!--当前学校-->
+    <RelativeLayout
+        android:layout_marginTop="@dimen/y18"
+        android:background="@color/w0"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y126">
+
+        <!--图标-->
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_marginStart="@dimen/x48"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <!--大学名称-->
+        <TextView
+            style="@style/black_16sp"
+            android:text="江南大学(北区)"
+            android:layout_toRightOf="@+id/icon"
+            android:layout_toLeftOf="@+id/reflesh"
+            android:layout_marginStart="@dimen/x48"
+            android:layout_centerVertical="true"
+            android:id="@+id/school"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <!--刷新-->
+        <ImageView
+            android:src="@mipmap/reflash"
+            android:id="@+id/reflesh"
+            android:layout_alignParentRight="true"
+            android:paddingEnd="@dimen/x48"
+            android:paddingStart="@dimen/x48"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <!--附近学校-->
+    <TextView
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginStart="@dimen/x48"
+        android:text="@string/nearby_school"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:background="@color/w0"
+        android:dividerHeight="1px"
+        android:divider="@color/g1"
+        android:paddingStart="@dimen/x48"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+
+</LinearLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/w3">
+
+    <RelativeLayout
+        android:id="@+id/setting_hometown_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y144"
+        android:background="@color/w1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/hometown_toolbar_leftarrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x24"
+            android:src="@mipmap/left_arrow_black" />
+
+        <TextView
+            android:id="@+id/hometown_back"
+            style="@style/black_16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x12"
+            android:layout_toRightOf="@+id/hometown_toolbar_leftarrow"
+            android:clickable="true"
+            android:text="@string/back" />
+
+        <TextView
+            style="@style/black_17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/hometown" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y200"
+        android:layout_below="@id/setting_hometown_toolbar"
+        android:layout_marginTop="@dimen/y48"
+        android:background="@color/w1"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/black_16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/x48"
+            android:text="@string/city" />
+
+        <TextView
+            android:id="@+id/hometown_text"
+            style="@style/g0_13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/x20"
+            android:layout_toStartOf="@+id/hometown_rightarrow"
+            android:text="未选择" />
+
+        <ImageView
+            android:id="@+id/hometown_rightarrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/x48"
+            android:src="@mipmap/right_arrow" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+        <!--<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                style="@style/black_16sp"
+                android:id="@+id/hometown_complete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/y48"
+                android:layout_marginEnd="@dimen/x48"
+                android:layout_marginBottom="@dimen/y48"
+                android:clickable="true"
+                android:text="@string/complete" />
+        </RelativeLayout>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/y100"
+            android:orientation="horizontal">
+
+            <com.xiaoshangxing.setting.utils.city_choosing.WheelView
+                android:id="@+id/id_province"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"></com.xiaoshangxing.setting.utils.city_choosing.WheelView>
+
+            <com.xiaoshangxing.setting.utils.city_choosing.WheelView
+                android:id="@+id/id_city"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"></com.xiaoshangxing.setting.utils.city_choosing.WheelView>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/hometown_complete"
+            style="@style/black_16sp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y120"
+            android:layout_marginBottom="@dimen/y48"
+            android:layout_marginEnd="@dimen/x48"
+            android:layout_marginStart="@dimen/x48"
+            android:layout_marginTop="@dimen/y48"
+            android:background="@drawable/buttonstyle_green1"
+            android:text="@string/complete"
+            android:textColor="@color/w0" />
+    </LinearLayout>
+
+</RelativeLayout>

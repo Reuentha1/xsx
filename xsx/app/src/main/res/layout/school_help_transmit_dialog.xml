@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/circular_8_w1"
+    android:layout_width="@dimen/x900"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/up_layout"
+        android:background="@drawable/et_circular_4_white"
+        android:layout_marginStart="@dimen/x80"
+        android:layout_marginEnd="@dimen/x60"
+        android:layout_marginTop="@dimen/y60"
+        android:layout_width="@dimen/x900"
+        android:layout_height="@dimen/y234">
+
+        <!--姓名学院-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/name"
+                android:text="@string/app_name"
+                android:layout_marginTop="@dimen/y12"
+                android:layout_marginStart="@dimen/x79"
+                android:textSize="13sp"
+                android:textColor="@color/b0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/college"
+                android:text="物联网"
+                android:textSize="10sp"
+                android:textColor="@color/g0"
+                android:layout_marginStart="@dimen/x6"
+                android:layout_gravity="bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!--文字内容-->
+        <TextView
+            android:layout_marginTop="@dimen/y32"
+            android:layout_marginStart="@dimen/x24"
+            android:layout_marginEnd="@dimen/x24"
+            android:text="@string/longtext"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textSize="13sp"
+            android:textColor="@color/b0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!--头像-->
+    <com.xiaoshangxing.utils.layout.CirecleImage
+        android:id="@+id/head_image"
+        android:layout_marginStart="@dimen/x63"
+        android:layout_marginTop="@dimen/height_48"
+        android:src="@mipmap/cirecleiamge_default"
+        android:layout_width="@dimen/x76"
+        android:layout_height="@dimen/y76" />
+
+    <!--输入框-->
+    <EditText
+        style="@style/input_box"
+        android:id="@+id/input"
+        android:background="@drawable/w0_stroke"
+        android:textSize="14sp"
+        android:textColor="@color/b0"
+        android:hint="给朋友留言"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/x12"
+        android:textColorHint="@color/g0"
+        android:layout_below="@+id/up_layout"
+        android:layout_marginEnd="@dimen/x60"
+        android:layout_marginStart="@dimen/x60"
+        android:layout_marginTop="@dimen/y26"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y102" />
+
+    <!--按钮-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/y34"
+        android:layout_below="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y144">
+        <include layout="@layout/line_horizontal_g1">
+
+        </include>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/cancel"
+                android:text="@string/cancle"
+                android:gravity="center"
+                android:textColor="@color/b0"
+                android:textSize="17sp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+            <View
+                android:background="@color/g1"
+                android:layout_width="1px"
+                android:layout_height="match_parent">
+
+            </View>
+
+            <TextView
+                android:id="@+id/send"
+                android:text="@string/send"
+                android:gravity="center"
+                android:textSize="17sp"
+                android:textColor="@color/green1"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

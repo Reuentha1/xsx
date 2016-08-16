@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--menu1-->
+    <TextView
+        android:id="@+id/menu1"
+        android:text="menu1"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:textColor="@color/b0"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y144" />
+
+    <include layout="@layout/line_horizontal_g1">
+
+    </include>
+
+    <!--menu2-->
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/menu2"
+        android:text="menu2"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:textColor="@color/b0"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y144" />
+
+    <include layout="@layout/line_horizontal_g1">
+
+    </include>
+
+    <!--menu3-->
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/menu3"
+        android:text="menu3"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:textColor="@color/b0"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y144" />
+
+    <View
+        android:background="@color/w2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y18">
+
+    </View>
+
+    <!--cancel-->
+    <TextView
+        android:id="@+id/cancel"
+        android:text="取消"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:textColor="@color/b0"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y144" />
+
+</LinearLayout>

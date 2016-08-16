@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/w3"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y601">
+
+    <!--网页信息-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y132">
+        <TextView
+            android:text="@string/webprovide"
+            android:paddingTop="@dimen/y24"
+            android:textSize="11sp"
+            android:textColor="@color/b4"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    
+    <!--分享选项-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/width_48"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y343">
+
+        <!--校上行-->
+        <LinearLayout
+            android:id="@+id/xsx"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@mipmap/sharetoxsx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:text="@string/sharetoxsx"
+                android:textColor="@color/b4"
+                android:paddingTop="@dimen/y24"
+                android:textSize="11sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--取消-->
+    <Button
+        android:id="@+id/cancel"
+        android:text="@string/cancle"
+        android:gravity="center"
+        android:textSize="17sp"
+        android:background="@color/w1"
+        android:textColor="@color/b4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y126" />
+
+</LinearLayout>

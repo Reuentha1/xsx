@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/w3"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/setting_currency_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y144"
+        android:background="@color/w1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/hometown_currency_leftarrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x24"
+            android:src="@mipmap/left_arrow_black" />
+
+        <TextView
+            android:id="@+id/currency_back"
+            style="@style/black_16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x12"
+            android:layout_toRightOf="@+id/hometown_currency_leftarrow"
+            android:clickable="true"
+            android:onClick="currency_back"
+            android:text="@string/back" />
+
+        <TextView
+            style="@style/black_17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/currency" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:onClick="ChatBackground"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y144"
+        android:layout_marginTop="@dimen/y48"
+        android:background="@color/w1"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/black_16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/x48"
+            android:text="@string/chatbackgd" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/x48"
+            android:src="@mipmap/right_arrow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y144"
+        android:paddingStart="@dimen/x48"
+        android:background="@color/w1"
+        android:layout_marginTop="@dimen/y48">
+
+        <TextView
+            style="@style/black_16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/receivemode" />
+
+        <com.xiaoshangxing.utils.SwitchView
+            android:id="@+id/currency_receivemode"
+            android:layout_width="40dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/x48" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y144"
+        android:layout_marginTop="@dimen/y48"
+        android:background="@color/w1"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/black_16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/x48"
+            android:text="@string/clearcache" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/clearcache_rightarrow"
+            android:text="32M"
+            android:textSize="12sp"
+            android:textColor="@color/g0"
+            android:paddingEnd="@dimen/x15"/>
+
+
+        <ImageView
+            android:id="@+id/clearcache_rightarrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/x48"
+            android:src="@mipmap/right_arrow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y126"
+        android:layout_marginTop="@dimen/y48"
+        android:background="@color/w1">
+
+        <TextView
+            style="@style/black_16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/clearchats" />
+    </RelativeLayout>
+
+
+</LinearLayout>

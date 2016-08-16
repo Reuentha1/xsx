@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--评论框-->
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/edit_and_emot"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--输入框-->
+        <RelativeLayout
+            android:id="@+id/comment_input_layout"
+            android:layout_above="@+id/emot_lay"
+            android:background="@color/w1"
+            android:paddingStart="@dimen/x23"
+            android:paddingEnd="@dimen/x23"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y144">
+
+            <!--输入框和表情按钮-->
+            <RelativeLayout
+                android:id="@+id/input_layout"
+                android:layout_toLeftOf="@+id/send"
+                android:background="@drawable/et_circular_8_w0"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y92">
+
+                <!--????不能把editext放在iamgeview的左边，否则得不到焦点 不知道为何-->
+                <stan.reuenthal.com.xsx.MainFrame.xiaoshangxing.input_activity.EmotionEdittext.EmoticonsEditText
+                    android:textCursorDrawable="@drawable/cursor_blue4"
+                    android:id="@+id/comment_input"
+                    android:paddingStart="10dp"
+                    android:paddingRight="@dimen/x80"
+                    android:gravity="center_vertical"
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:src="@mipmap/emotion"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/emotion"
+                    android:layout_marginEnd="@dimen/x18"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <!--发送按钮-->
+            <TextView
+                android:layout_marginStart="@dimen/x18"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/send"
+                android:text="@string/send"
+                android:textSize="14sp"
+                android:textColor="@color/w0"
+                android:enabled="false"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_circular_g1"
+                android:layout_width="@dimen/x160"
+                android:layout_height="@dimen/y92" />
+
+
+        </RelativeLayout>
+
+        <!--表情-->
+        <LinearLayout
+            android:id="@+id/emot_lay"
+            android:background="@color/w0"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v4.view.ViewPager
+                android:paddingStart="@dimen/width_48"
+                android:paddingEnd="@dimen/width_48"
+                android:paddingBottom="@dimen/y30"
+                android:paddingTop="@dimen/y30"
+                android:id="@+id/scrollview"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y432">
+
+            </android.support.v4.view.ViewPager>
+
+
+
+            <!--表情类型-->
+            <RelativeLayout
+                android:background="@color/w1"
+                android:id="@+id/emot_type"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y108">
+
+                <LinearLayout
+                    android:id="@+id/normal_emot"
+                    android:layout_width="@dimen/x152"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@mipmap/emot_grey_total"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/favorite"
+                    android:layout_toEndOf="@+id/normal_emot"
+                    android:layout_width="@dimen/x152"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@mipmap/heart_grey_total"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/delete_emot"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/width_48"
+                    android:layout_width="@dimen/x152"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/delete_emot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

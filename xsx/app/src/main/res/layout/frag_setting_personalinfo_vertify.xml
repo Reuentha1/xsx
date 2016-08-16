@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/w3"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/setting_vertify_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y144"
+        android:background="@color/w1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/hometown_vertify_leftarrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x24"
+            android:src="@mipmap/left_arrow_black" />
+
+        <TextView
+            android:id="@+id/vertify_back"
+            style="@style/black_16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x12"
+            android:layout_toRightOf="@+id/hometown_vertify_leftarrow"
+            android:clickable="true"
+            android:text="@string/back" />
+
+        <TextView
+            style="@style/black_17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/namevertify" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/y60"
+            android:paddingTop="@dimen/y48"
+            android:text="@string/vertify_text"
+            android:textColor="@color/g0"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/w1"
+        android:divider="@drawable/toolbar_divider"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/x48"
+        android:showDividers="middle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y144"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/black_16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/vertify_account" />
+
+            <EditText
+                android:id="@+id/editext_account"
+                style="@style/black_16sp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:digits="@string/digits_password"
+                android:hint="@string/vertify_account1"
+                android:paddingStart="@dimen/x123"
+                android:textCursorDrawable="@drawable/cursor_blue4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y144"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/black_16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/vertify_passwd" />
+
+            <EditText
+                android:id="@+id/editext_password"
+                style="@style/black_16sp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:digits="@string/digits_password"
+                android:hint="@string/vertify_passwd1"
+                android:inputType="textPassword"
+                android:paddingStart="@dimen/x123"
+                android:textCursorDrawable="@drawable/cursor_blue4" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y120"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/y48"
+            android:src="@mipmap/setting_vertify_agree" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/x15"
+            android:text="@string/agree"
+            android:textColor="@color/g0"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/VertifyAgreement"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/vertify_agreement"
+            android:textColor="@color/green1"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y120"
+        android:layout_marginTop="@dimen/y12">
+
+        <Button
+            android:id="@+id/vertify_submit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/y48"
+            android:layout_marginStart="@dimen/x48"
+            android:alpha="0.5"
+            android:background="@drawable/buttonstyle_green1"
+            android:clickable="false"
+            android:text="@string/submit"
+            android:textColor="@color/w0"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

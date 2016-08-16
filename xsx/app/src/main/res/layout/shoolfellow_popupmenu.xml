@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/x754"
+    android:layout_height="@dimen/y103"
+    android:background="@drawable/circular_12_b3"
+    android:orientation="horizontal">
+
+    <!--转发-->
+    <RelativeLayout
+        android:layout_width="@dimen/y250"
+        android:layout_height="@dimen/y103"
+        >
+
+        <LinearLayout
+            android:id="@+id/transmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/transmit" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/x18"
+                android:text="@string/transmit"
+                android:textColor="@color/w0"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!--分割线-->
+    <View
+        android:layout_marginTop="@dimen/y20"
+        android:background="@color/b0"
+        android:layout_width="1px"
+        android:layout_height="@dimen/y63">
+
+    </View>
+
+    <!--评论-->
+    <RelativeLayout
+        android:layout_width="@dimen/y250"
+        android:layout_height="@dimen/y103"
+        >
+
+        <LinearLayout
+            android:id="@+id/comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/comment_xiaoshang" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/x18"
+                android:text="@string/comment"
+                android:textColor="@color/w0"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!--分割线-->
+    <View
+        android:layout_marginTop="@dimen/y20"
+        android:background="@color/b0"
+        android:layout_width="1px"
+        android:layout_height="@dimen/y63">
+
+    </View>
+
+    <!--赞-->
+    <RelativeLayout
+        android:layout_width="@dimen/y250"
+        android:layout_height="@dimen/y103"
+        >
+
+        <LinearLayout
+            android:id="@+id/praise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/heart_white" />
+
+            <TextView
+                android:id="@+id/praiseOrCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/x18"
+                android:text="@string/praise"
+                android:textColor="@color/w0"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

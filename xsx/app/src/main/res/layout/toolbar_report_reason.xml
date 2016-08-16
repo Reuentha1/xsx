@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y144"
+    android:id="@+id/report_toolbar"
+    android:background="@color/w0"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/toolbar_report_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/x48"
+        android:text="@string/cancle"
+        android:clickable="true"
+        style="@style/black_16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/report"
+        style="@style/black_17sp"/>
+
+    <TextView
+        android:id="@+id/toolbar_report_next"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/x48"
+        android:text="@string/next"
+        android:clickable="true"
+        style="@style/green1_16sp"/>
+</RelativeLayout>

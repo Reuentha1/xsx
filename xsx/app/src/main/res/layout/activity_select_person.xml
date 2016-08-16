@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--导航栏-->
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_144"
+        android:paddingStart="@dimen/width_48">
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:text="@string/cancle"
+            android:textColor="@color/b0"
+            android:textSize="15sp" />
+        <!--title-->
+        <TextView
+            android:id="@+id/myState"
+            style="@style/black_16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/select_person" />
+        <TextView
+            android:id="@+id/sure"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:paddingEnd="@dimen/width_48"
+            android:text="@string/makesure"
+            android:textColor="@color/green1"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <!--已选-->
+    <LinearLayout
+        android:paddingStart="@dimen/width_48"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y160">
+        <android.support.v7.widget.RecyclerView
+            android:overScrollMode="never"
+            android:fadeScrollbars="false"
+            android:fadingEdge="none"
+            android:listSelector="@color/transparent"
+            android:id="@+id/recycleView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:divider="@null" />
+
+        <TextView
+            android:id="@+id/dialog"
+            android:layout_width="80.0dip"
+            android:layout_height="80.0dip"
+            android:layout_gravity="center"
+            android:background="@drawable/show_head_toast_bg"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:textSize="30.0dip"
+            android:visibility="invisible" />
+
+        <com.xiaoshangxing.SelectPerson.SideBar
+            android:id="@+id/sidrbar"
+            android:layout_width="30.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right|center" />
+    </FrameLayout>
+
+</LinearLayout>

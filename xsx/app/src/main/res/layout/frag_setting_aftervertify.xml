@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/w3"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y144"
+        android:background="@color/w1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/vertify_leftarrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x24"
+            android:src="@mipmap/left_arrow_black" />
+
+        <TextView
+            android:id="@+id/back"
+            style="@style/black_16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x12"
+            android:layout_toRightOf="@+id/vertify_leftarrow"
+            android:clickable="true"
+            android:text="@string/back" />
+
+        <TextView
+            style="@style/black_17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/namevertify" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y156"
+        android:background="@color/w1">
+
+        <ImageView
+            android:layout_width="@dimen/x98"
+            android:layout_height="@dimen/y98"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/x48"
+            android:src="@mipmap/setting_vertify_sucess" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/x36"
+            android:gravity="center"
+            android:text="@string/vertifyfinish"
+            android:textColor="@color/b0"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y48"
+        android:background="@color/w1"
+        android:divider="@drawable/toolbar_divider"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/x48"
+        android:showDividers="middle">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y144">
+
+            <TextView
+                style="@style/black_16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/realname" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:gravity="center_vertical"
+                android:paddingEnd="@dimen/x84"
+                android:text="王振华"
+                android:textColor="@color/b4"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y144">
+
+            <TextView
+                style="@style/black_16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/IDnumber" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:gravity="center_vertical"
+                android:paddingEnd="@dimen/x84"
+                android:text="王振华"
+                android:textColor="@color/b4"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y48"
+        android:background="@color/w1"
+        android:divider="@drawable/toolbar_divider"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/x48"
+        android:showDividers="middle">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y144">
+
+            <TextView
+                style="@style/black_16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/school" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:gravity="center_vertical"
+                android:paddingEnd="@dimen/x84"
+                android:text="王振华"
+                android:textColor="@color/b4"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y144">
+
+            <TextView
+                style="@style/black_16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/studentID" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:gravity="center_vertical"
+                android:paddingEnd="@dimen/x84"
+                android:text="王振华"
+                android:textColor="@color/b4"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y144">
+
+            <TextView
+                style="@style/black_16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/education" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:gravity="center_vertical"
+                android:paddingEnd="@dimen/x84"
+                android:text="王振华"
+                android:textColor="@color/b4"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y144">
+
+            <TextView
+                style="@style/black_16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/EnrollmentYear" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:gravity="center_vertical"
+                android:paddingEnd="@dimen/x84"
+                android:text="王振华"
+                android:textColor="@color/b4"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y144">
+
+            <TextView
+                style="@style/black_16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/VertifyTime" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:gravity="center_vertical"
+                android:paddingEnd="@dimen/x84"
+                android:text="王振华"
+                android:textColor="@color/b4"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/x780"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_circular_white"
+    android:orientation="vertical">
+
+
+    <!--Title-->
+    <TextView
+        android:id="@+id/dialog_title"
+        style="@style/black_17sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/transparent"
+        android:paddingTop="@dimen/y60"
+        android:text="Title"
+        android:textStyle="bold"
+        android:visibility="gone" />
+    <!--message-->
+    <TextView
+        android:id="@+id/dialog_message"
+        style="@style/black_16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y30"
+        android:background="@color/transparent"
+        android:gravity="center_horizontal"
+        android:paddingBottom="13dp"
+        android:paddingEnd="@dimen/x24"
+        android:paddingStart="@dimen/x24"
+        android:paddingTop="5dp"
+        android:text="Message" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y75"
+        android:layout_marginBottom="@dimen/y48"
+        android:layout_marginEnd="@dimen/x42"
+        android:layout_marginStart="@dimen/x42"
+        android:background="@color/w0"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/dialog_edittext"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:digits="@string/digits_password"
+            android:textCursorDrawable="@drawable/cursor_blue4" />
+
+        <ImageView
+            android:id="@+id/dialog_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/x24"
+            android:clickable="true"
+            android:src="@mipmap/delete"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!--分割线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/g1">
+
+    </View>
+
+    <!--button-->
+    <LinearLayout
+        android:id="@+id/dialog_twoButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:orientation="horizontal">
+        <!--两个button-->
+        <Button
+            android:id="@+id/dialog_button1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:text="@string/cancle"
+            android:textColor="@color/blue2"
+            android:textSize="16sp" />
+
+        <!--分割线-->
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/g1">
+
+        </View>
+
+        <Button
+            android:id="@+id/dialog_button2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:text="好"
+            android:textColor="@color/blue2"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/dialog_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y126"
+        android:background="@color/transparent"
+        android:text="取消"
+        android:textColor="@color/blue2"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+
+</LinearLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/w3">
+
+    <RelativeLayout
+        android:id="@+id/setting_MyCode_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y144"
+        android:background="@color/w1"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/hometown_MyCode_leftarrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x24"
+            android:src="@mipmap/left_arrow_black" />
+        <TextView
+            style="@style/black_16sp"
+            android:id="@+id/mycode_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x12"
+            android:layout_toRightOf="@+id/hometown_MyCode_leftarrow"
+            android:clickable="true"
+            android:text="@string/back" />
+        <TextView
+            style="@style/black_17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/mycode" />
+        <ImageView
+            android:id="@+id/MyCode_threepoint"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/x48"
+            android:src="@mipmap/toolbar_right_threepoint" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x210"
+        android:layout_marginTop="@dimen/y140"
+        android:orientation="horizontal">
+        <com.xiaoshangxing.setting.utils.photo_choosing.RoundedImageView
+            android:id="@+id/mycode_roundimg"
+            android:layout_width="@dimen/x200"
+            android:layout_height="@dimen/x200"
+            android:layout_marginStart="@dimen/x60"
+            android:layout_marginEnd="@dimen/x42"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/head_init"
+            android:scaleType="centerCrop"
+            app:corner_radius="90dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/mycode_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="王振华"
+                    android:textSize="21sp"
+                    android:textColor="@color/b0"
+                    android:layout_gravity="bottom"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/setting_mycode_men"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设计学院"
+                android:textSize="16sp"
+                android:textColor="@color/g0" />
+
+        </LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/y108"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="@dimen/x828"
+            android:layout_height="@dimen/x828"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/greyblock"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y120"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/saoyisao"
+            android:textSize="13sp"
+            android:textColor="@color/g0"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
